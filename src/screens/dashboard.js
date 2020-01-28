@@ -1,5 +1,5 @@
 import React from 'react'
-import { StatusBar, Text, View ,TouchableOpacity} from 'react-native'
+import { StatusBar, Text, View, TouchableOpacity } from 'react-native'
 import BottomNavigation, { IconTab } from 'react-native-material-bottom-navigation'
 import Icon from 'react-native-vector-icons/FontAwesome'
 import FavoriteScreen from './favroite';
@@ -48,7 +48,7 @@ export default class DashBoardScreen extends React.Component {
         activeTab: this.tabs[0].key,
         headerColor: '#000000',
         headerText: 'Home',
-        isGrid : true
+        isGrid: true
     };
 
     renderIcon = icon => ({ isActive }) => (
@@ -66,7 +66,7 @@ export default class DashBoardScreen extends React.Component {
 
     gridPress = () => {
         this.setState({
-            isGrid:!this.state.isGrid
+            isGrid: !this.state.isGrid
         })
     }
 
@@ -101,7 +101,7 @@ export default class DashBoardScreen extends React.Component {
                 <StatusBar backgroundColor={this.state.headerColor} barStyle="light-content" />
                 <View style={{
                     height: 48,
-                    flexDirection:'row',
+                    flexDirection: 'row',
                     backgroundColor: this.state.headerColor,
                     justifyContent: 'space-between',
                     alignItems: 'center'
@@ -109,18 +109,17 @@ export default class DashBoardScreen extends React.Component {
                     <Text style={{
                         textAlign: 'center',
                         color: 'white',
-                        flex:1,
-                        marginStart:34,
+                        flex: 1,
+                        marginStart: 34,
                         fontSize: 18,
                         fontWeight: '900'
                     }}>{this.state.headerText}</Text>
 
-                    {this.state.headerText==="Home"? 
+                    {this.state.headerText === "Home" ?
                         <TouchableOpacity style={{ marginEnd: 16 }} onPress={this.gridPress}>
-                            <Icon size={24} color="white" name={this.state.isGrid?"list-ul":"th-large"}/>
+                            <Icon size={24} color="white" name={this.state.isGrid ? "list-ul" : "th-large"} />
                         </TouchableOpacity>
-                        
-                        :<View></View> }
+                        : <View></View>}
                 </View>
                 <View style={{ flex: 1 }}>
                     {screenVisible}

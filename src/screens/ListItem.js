@@ -21,7 +21,7 @@ showDeleteDialog = () => {
 const listItem = (props) => (
     <View style={{ alignItems: 'center', flex: props.isGrid ? 1 / 2 : 1 }}>
         <View style={styles.bg_shadow}>
-            <ImageBackground source={props.imageUrl!=null?{ uri: props.imageUrl }:require('../images/temp.jpg')} style={[styles.imgStyle, { height: props.isGrid ? 150 : 250 }]} imageStyle={{ borderRadius: 10 }} resizeMode="cover">
+            <ImageBackground source={props.imageUrl != null ? { uri: props.imageUrl } : require('../images/temp.jpg')} style={[styles.imgStyle, { height: props.isGrid ? 150 : 250 }]} imageStyle={{ borderRadius: 10 }} resizeMode="cover">
                 <View style={styles.transparentBg}>
                     <View style={{ width: '50%' }}>
                         <Text style={{ padding: 10, color: 'white', fontSize: props.isGrid ? 12 : 18 }}>{props.itemName}</Text>

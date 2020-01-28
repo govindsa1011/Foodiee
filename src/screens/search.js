@@ -16,7 +16,7 @@ export default class SearchScreen extends React.Component {
 
     render() {
         return (
-            <View style={{ flex: 1, alignItems: "center"}}>
+            <View style={{ flex: 1, alignItems: "center" }}>
                 <View style={{ alignItems: "center", flexDirection: 'row', justifyContent: 'center' }}>
                     <TextInput style={styles.input}
                         placeholder='Search here...'
@@ -56,8 +56,8 @@ const styles = StyleSheet.create({
         marginTop: 20,
         elevation: 8,
     },
-    circleShadow:{
-        padding:10,
+    circleShadow: {
+        padding: 10,
         backgroundColor: '#fff',
         shadowColor: "#000",
         shadowOffset: {
@@ -69,6 +69,6 @@ const styles = StyleSheet.create({
         shadowRadius: 3.84,
         elevation: 8,
         marginTop: 20,
-        marginStart:16
+        marginStart: 16
     }
 })

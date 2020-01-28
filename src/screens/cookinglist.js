@@ -64,14 +64,14 @@ export default class CookingList extends React.Component {
                     refreshControl={
                         <RefreshControl refreshing={this.state.isLoading} onRefresh={this.onRefresh}></RefreshControl>
                     }
-                    style={{ width: '100%' }} numColumns={this.props.isGrid?2:1} showsVerticalScrollIndicator={false} data={this.state.itemArray} renderItem={(info,index) => (
+                    style={{ width: '100%' }} numColumns={this.props.isGrid ? 2 : 1} showsVerticalScrollIndicator={false} data={this.state.itemArray} renderItem={(info, index) => (
                         <ListItem itemName={info.item.name}
                             imageUrl={info.item.photo}
                             isGrid={this.props.isGrid}
                             isFav={false} />
                     )}
                     keyExtractor={(item) => item.recipeId}
-                    key = {this.props.isGrid}>
+                    key={this.props.isGrid}>
                 </FlatList>
             </View>
         )

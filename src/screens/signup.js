@@ -46,7 +46,7 @@ class RegisterScreen extends React.Component {
                 isNameValid: true
             })
         }
-        
+
         if (this.state.strEmail === "") {
             this.setState({
                 isEmailValid: false
@@ -168,7 +168,6 @@ class RegisterScreen extends React.Component {
     render() {
 
         return (
-
             <SafeAreaView style={styles.container}>
                 <StatusBar barStyle='light-content' backgroundColor='black' />
                 <KeyboardAvoidingView behavior='padding' style={styles.container}>
@@ -199,8 +198,8 @@ class RegisterScreen extends React.Component {
                                         autoCorrect={false}
                                         value={this.state.strEmail}
                                         onChangeText={this.txtEmailChangeHangler}
-                                        onSubmitEditing={() => this.refs.txtPassword.focus()} 
-                                        ref={"txtEmail"}/>
+                                        onSubmitEditing={() => this.refs.txtPassword.focus()}
+                                        ref={"txtEmail"} />
 
                                     {!this.state.isEmailValid ? <ShakingText style={{ color: '#f7c744', marginBottom: 10 }}>{this.state.errMsgEmail}</ShakingText> : <View style={{ marginBottom: 20 }} />}
 
@@ -212,7 +211,7 @@ class RegisterScreen extends React.Component {
                                         value={this.state.strPassword}
                                         onChangeText={this.txtPasswordChangeHangler}
                                         autoCorrect={false}
-                                        onSubmitEditing={() => this.refs.txtConfirmPassword.focus()} 
+                                        onSubmitEditing={() => this.refs.txtConfirmPassword.focus()}
                                         ref={"txtPassword"} />
 
                                     {!this.state.isPasswordValid ? <ShakingText style={{ color: '#f7c744', marginBottom: 10 }}>{this.state.errMsgPassword}</ShakingText> : <View style={{ marginBottom: 20 }} />}

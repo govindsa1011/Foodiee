@@ -140,7 +140,7 @@ class LoginScreen extends React.Component {
                             actions: [NavigationActions.navigate({ routeName: "DashBoard" })],
                         });
                         this.props.navigation.dispatch(navigateAction);
-                        
+
                     } else {
                         this.setState({
                             strErrMsg: "Email and password does not match."
