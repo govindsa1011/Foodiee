@@ -117,7 +117,7 @@ export default class DashBoardScreen extends React.Component {
 
                     {this.state.headerText==="Home"? 
                         <TouchableOpacity style={{ marginEnd: 16 }} onPress={this.gridPress}>
-                            <Icon size={24} color="white" name={this.state.isGrid?"th-large":"list-ul"}/>
+                            <Icon size={24} color="white" name={this.state.isGrid?"list-ul":"th-large"}/>
                         </TouchableOpacity>
                         
                         :<View></View> }
