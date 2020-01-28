@@ -1,0 +1,226 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:1:1-28:12
+MERGED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:1:1-28:12
+MERGED from [:react-native-vector-icons] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-gesture-handler] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.61.5] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/168acf2b1798da1d27dbf9cc98dec450/AndroidManifest.xml:2:1-13:12
+MERGED from [org.webkit:android-jsc:r245459] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/f07588b17331703efcde4d19957ba1b7/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/ffb91d1e8f7827c8c68254243c37c2dc/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/08d5d8565b8ce98b3d9eaec4449320a8/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/120c45a12a8388999b039694e8ba6183/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/de6757f2eaa72ead226303aa3cc5b3a2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/692e1046f83cc77f9b66afc94a9ae80f/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/cc943d2a977c66f303ad356e9085bf23/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/080b0795759f8b04e1494bb4aa41191e/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/5e9241201d5d97b3685eed3c74eb41bd/AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.fragment:fragment:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b0adad9fa1585ea85a4c3ef6c036c066/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/32c7ee81f61fad3072350f2d7a14f46d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/2c9830d25e6a06017f285d53b3f521b7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/cbabe4547c113fc7cbb24e251935d469/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/4b468d3d83249898be0acbcbfbfbf169/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/f1652033a034e99c99ccc1359215458e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/3252051561844d2804965c22da080288/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/ed5a751cec16ad4bf8fc24360255c511/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/e3a8b692e5d83c548cf7150126e49d75/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/fabe35ad3ae02e9130939904d317216d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/936136277597914f296ec1ff5f8ce51c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/08bd5b79192bac0b6c5db95c1da4e96d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/bd8801050468cd8a9cfaa7b14c80660f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.1] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/d69dd2ee07006235902e5a2e7d936425/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b55d29237c4e660a3be634f3219a42d0/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/1f6abf0fa6ed34a970d6da9baf874d9d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/d0548f68806d26bbab7edc56afc6acfc/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/31fa7bd7174f7ac58f3c565e7ee7deb0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/7cbecf5849161a73f88d6ca0d628b047/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/c0482e6f8954e63581e2d8dd994eb475/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/582ed8027fad5637405cebdea072e2a4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/e12bfafbaf60757bd780675cdeef79c3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/fed7fae6671f933040df0ceb1380beed/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/3ccc4203bbcb916a4b5f3b7e216e15cf/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/822e105ceb5efbb9ae7b8ad06b9d1f6a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/6382e18073502b65a40f901974cd88c8/AndroidManifest.xml:2:1-9:12
+INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+	package
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:2:5-26
+		INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:2:5-26
+		INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/debug/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:1:1-28:12
+		INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/debug/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/debug/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:1:1-28:12
+		INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/debug/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:4:22-64
+application
+ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:6:5-26:19
+MERGED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:6:5-26:19
+MERGED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:6:5-26:19
+MERGED from [com.facebook.react:react-native:0.61.5] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/168acf2b1798da1d27dbf9cc98dec450/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.61.5] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/168acf2b1798da1d27dbf9cc98dec450/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/5e9241201d5d97b3685eed3c74eb41bd/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/5e9241201d5d97b3685eed3c74eb41bd/AndroidManifest.xml:11:5-20
+MERGED from [androidx.core:core:1.0.1] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/d69dd2ee07006235902e5a2e7d936425/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.1] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/d69dd2ee07006235902e5a2e7d936425/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b55d29237c4e660a3be634f3219a42d0/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b55d29237c4e660a3be634f3219a42d0/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.1] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/d69dd2ee07006235902e5a2e7d936425/AndroidManifest.xml:22:18-86
+	android:label
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:10:9-41
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:10:9-41
+	tools:ignore
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/debug/AndroidManifest.xml:7:75-114
+	android:roundIcon
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:11:9-54
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:11:9-54
+	tools:targetApi
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/debug/AndroidManifest.xml:7:54-74
+	android:icon
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:9:9-43
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:8:9-36
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:8:9-36
+	android:theme
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:12:9-40
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:12:9-40
+	android:usesCleartextTraffic
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:13:9-44
+	android:name
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:7:9-40
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:7:9-40
+activity#com.foodiee.MainActivity
+ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:15:9-24:20
+	android:label
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:18:13-45
+	android:windowSoftInputMode
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:19:13-55
+	android:configChanges
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:17:13-83
+	android:name
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:16:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:20:13-23:29
+action#android.intent.action.MAIN
+ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:21:17-69
+	android:name
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:22:17-77
+	android:name
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:22:27-74
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:25:9-86
+	android:name
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:25:19-83
+uses-sdk
+INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-vector-icons] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.5] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/168acf2b1798da1d27dbf9cc98dec450/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.5] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/168acf2b1798da1d27dbf9cc98dec450/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/f07588b17331703efcde4d19957ba1b7/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/f07588b17331703efcde4d19957ba1b7/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat:1.0.2] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/ffb91d1e8f7827c8c68254243c37c2dc/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/ffb91d1e8f7827c8c68254243c37c2dc/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/08d5d8565b8ce98b3d9eaec4449320a8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/08d5d8565b8ce98b3d9eaec4449320a8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/120c45a12a8388999b039694e8ba6183/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/120c45a12a8388999b039694e8ba6183/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/de6757f2eaa72ead226303aa3cc5b3a2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/de6757f2eaa72ead226303aa3cc5b3a2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/692e1046f83cc77f9b66afc94a9ae80f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/692e1046f83cc77f9b66afc94a9ae80f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/cc943d2a977c66f303ad356e9085bf23/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/cc943d2a977c66f303ad356e9085bf23/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/080b0795759f8b04e1494bb4aa41191e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/080b0795759f8b04e1494bb4aa41191e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/5e9241201d5d97b3685eed3c74eb41bd/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/5e9241201d5d97b3685eed3c74eb41bd/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.fragment:fragment:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b0adad9fa1585ea85a4c3ef6c036c066/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b0adad9fa1585ea85a4c3ef6c036c066/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/32c7ee81f61fad3072350f2d7a14f46d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/32c7ee81f61fad3072350f2d7a14f46d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/2c9830d25e6a06017f285d53b3f521b7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/2c9830d25e6a06017f285d53b3f521b7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/cbabe4547c113fc7cbb24e251935d469/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/cbabe4547c113fc7cbb24e251935d469/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/4b468d3d83249898be0acbcbfbfbf169/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/4b468d3d83249898be0acbcbfbfbf169/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/f1652033a034e99c99ccc1359215458e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/f1652033a034e99c99ccc1359215458e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/3252051561844d2804965c22da080288/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/3252051561844d2804965c22da080288/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/ed5a751cec16ad4bf8fc24360255c511/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/ed5a751cec16ad4bf8fc24360255c511/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/e3a8b692e5d83c548cf7150126e49d75/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/e3a8b692e5d83c548cf7150126e49d75/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/fabe35ad3ae02e9130939904d317216d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/fabe35ad3ae02e9130939904d317216d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/936136277597914f296ec1ff5f8ce51c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/936136277597914f296ec1ff5f8ce51c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/08bd5b79192bac0b6c5db95c1da4e96d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/08bd5b79192bac0b6c5db95c1da4e96d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/bd8801050468cd8a9cfaa7b14c80660f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/bd8801050468cd8a9cfaa7b14c80660f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/d69dd2ee07006235902e5a2e7d936425/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/d69dd2ee07006235902e5a2e7d936425/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b55d29237c4e660a3be634f3219a42d0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b55d29237c4e660a3be634f3219a42d0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/1f6abf0fa6ed34a970d6da9baf874d9d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/1f6abf0fa6ed34a970d6da9baf874d9d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/d0548f68806d26bbab7edc56afc6acfc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/d0548f68806d26bbab7edc56afc6acfc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/31fa7bd7174f7ac58f3c565e7ee7deb0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/31fa7bd7174f7ac58f3c565e7ee7deb0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/7cbecf5849161a73f88d6ca0d628b047/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/7cbecf5849161a73f88d6ca0d628b047/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/c0482e6f8954e63581e2d8dd994eb475/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/c0482e6f8954e63581e2d8dd994eb475/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/582ed8027fad5637405cebdea072e2a4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/582ed8027fad5637405cebdea072e2a4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/e12bfafbaf60757bd780675cdeef79c3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/e12bfafbaf60757bd780675cdeef79c3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/fed7fae6671f933040df0ceb1380beed/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/fed7fae6671f933040df0ceb1380beed/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/3ccc4203bbcb916a4b5f3b7e216e15cf/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/3ccc4203bbcb916a4b5f3b7e216e15cf/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/822e105ceb5efbb9ae7b8ad06b9d1f6a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/822e105ceb5efbb9ae7b8ad06b9d1f6a/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/6382e18073502b65a40f901974cd88c8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/6382e18073502b65a40f901974cd88c8/AndroidManifest.xml:5:5-7:41
+INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/debug/AndroidManifest.xml
+INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/debug/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/debug/AndroidManifest.xml
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/debug/AndroidManifest.xml:5:5-77
+	android:name
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/debug/AndroidManifest.xml:5:22-75
