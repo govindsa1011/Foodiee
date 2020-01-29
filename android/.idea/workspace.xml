@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e2a1a72-3cc6-4d06-b9b0-c203b1fb91f6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../src/screens/ListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/ListItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/screens/cookinglist.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/cookinglist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/screens/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/screens/favroite.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/favroite.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/screens/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/screens/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/screens/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/screens/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/screens/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/screens/splash.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/splash.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,12 +32,12 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider editor-type-id="android-manifest" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="45">
+              <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
             </state>
           </provider>
+          <provider editor-type-id="android-manifest" />
         </entry>
       </file>
     </leaf>
@@ -64,9 +59,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="67" />
     <option name="y" value="25" />
-    <option name="width" value="960" />
-    <option name="height" value="1006" />
+    <option name="width" value="927" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -75,9 +71,15 @@
     </navigator>
     <panes>
       <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
+            <path>
+              <item name="Foodiee" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
             <path>
               <item name="Foodiee" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
@@ -86,8 +88,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -198,7 +198,7 @@
       <window_info id="Image Layers" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Capture Tool" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.1814301" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.1814301" />
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Structure" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Mirror" order="0" />
@@ -206,7 +206,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5010672" side_tool="true" weight="0.523322" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="5" visible="true" weight="0.672748" />
+      <window_info anchor="bottom" id="Logcat" order="5" weight="0.67235494" />
       <window_info anchor="bottom" id="Version Control" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="TODO" order="8" />
@@ -234,12 +234,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="45">
+          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
         </state>
       </provider>
+      <provider editor-type-id="android-manifest" />
     </entry>
   </component>
   <component name="masterDetails">
