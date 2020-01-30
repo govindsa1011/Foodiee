@@ -90,13 +90,6 @@ export default class CookingList extends React.Component {
                 }
             )
         }).then((response) => {
-            let temp = JSON.stringify(
-                {
-                    'recipeId': recipeId
-                }
-            )
-            console.log("recipeId : "+ temp)
-
             if (response.status == 200) {
                 return response.json()
             } else {
