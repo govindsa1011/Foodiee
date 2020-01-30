@@ -1,22 +1,6 @@
 import React from 'react'
-import { View, Text, TouchableOpacity, StyleSheet, ImageBackground, Alert } from 'react-native'
+import { View, Text, TouchableOpacity, StyleSheet, ImageBackground } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome'
-
-showDeleteDialog = () => {
-    Alert.alert(
-        '',
-        'Are you sure want to delete?',
-        [
-            {
-                text: 'No',
-                onPress: () => console.log('No Pressed'),
-                style: 'cancel',
-            },
-            { text: 'Yes', onPress: () => console.log('Yes Pressed') },
-        ],
-        { cancelable: false },
-    );
-}
 
 const listItem = (props) => (
     <View style={{ alignItems: 'center', flex: props.isGrid ? 1 / 2 : 1 }}>
@@ -30,7 +14,7 @@ const listItem = (props) => (
                         <TouchableOpacity style={{ marginEnd: 16 }} >
                             <Icon size={props.isGrid ? 16 : 24} color={props.isFav ? 'red' : 'white'} name='heart' />
                         </TouchableOpacity>
-                        <TouchableOpacity style={{ marginEnd: 16 }} onPress={this.showDeleteDialog}>
+                        <TouchableOpacity style={{ marginEnd: 16 }} onPress={() => props.onItemClick(props.recipeId)}>
                             <Icon size={props.isGrid ? 16 : 24} color="white" name='trash' />
                         </TouchableOpacity>
                     </View>

@@ -1,8 +1,28 @@
 import React from 'react'
-import { View, FlatList, RefreshControl } from 'react-native'
+import { View, FlatList, RefreshControl, Alert } from 'react-native'
 import ListItem from './ListItem';
 
 export default class CookingList extends React.Component {
+
+    showDeleteDialog = (id) => {
+        Alert.alert(
+            '',
+            'Are you sure want to delete?',
+            [
+                {
+                    text: 'No',
+                    onPress: () => console.log('No Pressed'),
+                    style: 'cancel',
+                },
+                { text: 'Yes', onPress: () => {
+                    this.setState({itemArray: this.state.itemArray.filter(function(item) { 
+                        return item.recipeId !== id
+                    })});
+                }},
+            ],
+            { cancelable: false },
+        );
+    }
 
     constructor(props) {
         super(props);
@@ -10,6 +30,10 @@ export default class CookingList extends React.Component {
             isLoading: false,
             itemArray: []
         }
+    }
+
+    onItemClick = (id) => {
+        this.showDeleteDialog(id)
     }
 
     onRefresh = () => {
@@ -21,7 +45,7 @@ export default class CookingList extends React.Component {
             isLoading: true
         })
 
-        fetch("http://35.160.197.175:3006/api/v1/recipe/cooking-list", {
+        fetch("http://35.160.197.175:3006/api/v1/recipe/feeds", {
             method: 'GET',
             headers: {
                 'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Mn0.MGBf-reNrHdQuwQzRDDNPMo5oWv4GlZKlDShFAAe16s'
@@ -48,8 +72,6 @@ export default class CookingList extends React.Component {
                     };
                 })
             })
-
-            console.log(this.state.itemArray)
         })
     }
 
@@ -65,10 +87,13 @@ export default class CookingList extends React.Component {
                         <RefreshControl refreshing={this.state.isLoading} onRefresh={this.onRefresh}></RefreshControl>
                     }
                     style={{ width: '100%' }} numColumns={this.props.isGrid ? 2 : 1} showsVerticalScrollIndicator={false} data={this.state.itemArray} renderItem={(info, index) => (
-                        <ListItem itemName={info.item.name}
+                        <ListItem
+                            recipeId={info.item.recipeId}
+                            itemName={info.item.name}
                             imageUrl={info.item.photo}
                             isGrid={this.props.isGrid}
-                            isFav={false} />
+                            isFav={false}
+                            onItemClick={this.onItemClick.bind(this)} />
                     )}
                     keyExtractor={(item) => item.recipeId}
                     key={this.props.isGrid}>
