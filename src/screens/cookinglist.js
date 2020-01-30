@@ -57,7 +57,7 @@ export default class CookingList extends React.Component {
         fetch(Constant.BASE_URL+Constant.ADD_TO_WISHLIST, {
             method: 'POST',
             headers: {
-                'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Mn0.MGBf-reNrHdQuwQzRDDNPMo5oWv4GlZKlDShFAAe16s',
+                'Authorization': Constant.TOKEN,
                 'Content-Type':'application/json'
             },
             body: JSON.stringify(
@@ -81,7 +81,7 @@ export default class CookingList extends React.Component {
         fetch(Constant.BASE_URL+Constant.REMOVE_FROM_WISHLIST, {
             method: 'POST',
             headers: {
-                'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Mn0.MGBf-reNrHdQuwQzRDDNPMo5oWv4GlZKlDShFAAe16s',
+                'Authorization': Constant.TOKEN,
                 'Content-Type':'application/json'
             },
             body: JSON.stringify(
@@ -109,7 +109,7 @@ export default class CookingList extends React.Component {
         fetch(Constant.BASE_URL+Constant.GET_FEEDS, {
             method: 'GET',
             headers: {
-                'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Mn0.MGBf-reNrHdQuwQzRDDNPMo5oWv4GlZKlDShFAAe16s'
+                'Authorization': Constant.TOKEN
             }
         }).then((response) => {
             if (response.status == 200) {
