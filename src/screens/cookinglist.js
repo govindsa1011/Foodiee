@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, FlatList, RefreshControl, Alert } from 'react-native'
 import ListItem from './ListItem';
+import * as Constant from '../utils/constants'
 
 export default class CookingList extends React.Component {
 
@@ -14,11 +15,15 @@ export default class CookingList extends React.Component {
                     onPress: () => console.log('No Pressed'),
                     style: 'cancel',
                 },
-                { text: 'Yes', onPress: () => {
-                    this.setState({itemArray: this.state.itemArray.filter(function(item) { 
-                        return item.recipeId !== id
-                    })});
-                }},
+                {
+                    text: 'Yes', onPress: () => {
+                        this.setState({
+                            itemArray: this.state.itemArray.filter(function (item) {
+                                return item.recipeId !== id
+                            })
+                        });
+                    }
+                },
             ],
             { cancelable: false },
         );
@@ -36,16 +41,79 @@ export default class CookingList extends React.Component {
         this.showDeleteDialog(id)
     }
 
+    onHeartClick = (item) => {
+        if(item.inCookingList==1){
+            this.removeFromFavroite(item.recipeId)
+        }else{
+            this.addToFavroite(item.recipeId)
+        }
+    }
+
     onRefresh = () => {
         this.fetchCookingList()
     };
+
+    addToFavroite = (recipeId) => {
+        fetch(Constant.BASE_URL+Constant.ADD_TO_WISHLIST, {
+            method: 'POST',
+            headers: {
+                'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Mn0.MGBf-reNrHdQuwQzRDDNPMo5oWv4GlZKlDShFAAe16s',
+                'Content-Type':'application/json'
+            },
+            body: JSON.stringify(
+                {
+                    'recipeId': recipeId
+                }
+            )
+        }).then((response) => {
+            if (response.status == 200) {
+                return response.json()
+            } else {
+                return null
+            }
+        }).then((responseJson) => {
+            console.log(responseJson)
+            this.fetchCookingList()
+        })
+    }
+
+    removeFromFavroite = (recipeId) => {
+        fetch(Constant.BASE_URL+Constant.REMOVE_FROM_WISHLIST, {
+            method: 'POST',
+            headers: {
+                'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Mn0.MGBf-reNrHdQuwQzRDDNPMo5oWv4GlZKlDShFAAe16s',
+                'Content-Type':'application/json'
+            },
+            body: JSON.stringify(
+                {
+                    'recipeId': recipeId
+                }
+            )
+        }).then((response) => {
+            let temp = JSON.stringify(
+                {
+                    'recipeId': recipeId
+                }
+            )
+            console.log("recipeId : "+ temp)
+
+            if (response.status == 200) {
+                return response.json()
+            } else {
+                return null
+            }
+        }).then((responseJson) => {
+            console.log(responseJson)
+            this.fetchCookingList()
+        })
+    }
 
     fetchCookingList = () => {
         this.setState({
             isLoading: true
         })
 
-        fetch("http://35.160.197.175:3006/api/v1/recipe/feeds", {
+        fetch(Constant.BASE_URL+Constant.GET_FEEDS, {
             method: 'GET',
             headers: {
                 'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Mn0.MGBf-reNrHdQuwQzRDDNPMo5oWv4GlZKlDShFAAe16s'
@@ -69,6 +137,7 @@ export default class CookingList extends React.Component {
                         complexity: item.complexity,
                         firstName: item.firstName,
                         lastName: item.lastName,
+                        inCookingList: item.inCookingList
                     };
                 })
             })
@@ -91,9 +160,11 @@ export default class CookingList extends React.Component {
                             recipeId={info.item.recipeId}
                             itemName={info.item.name}
                             imageUrl={info.item.photo}
+                            item = {info.item}
                             isGrid={this.props.isGrid}
-                            isFav={false}
-                            onItemClick={this.onItemClick.bind(this)} />
+                            isFav={info.item.inCookingList == 1}
+                            onItemClick={this.onItemClick.bind(this)}
+                            onHeartClick={this.onHeartClick.bind(this)} />
                     )}
                     keyExtractor={(item) => item.recipeId}
                     key={this.props.isGrid}>

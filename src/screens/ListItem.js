@@ -11,7 +11,7 @@ const listItem = (props) => (
                         <Text style={{ padding: 10, color: 'white', fontSize: props.isGrid ? 12 : 18 }}>{props.itemName}</Text>
                     </View>
                     <View style={{ width: '50%', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end' }}>
-                        <TouchableOpacity style={{ marginEnd: 16 }} >
+                        <TouchableOpacity style={{ marginEnd: 16 }} onPress={() => props.onHeartClick(props.item)}>
                             <Icon size={props.isGrid ? 16 : 24} color={props.isFav ? 'red' : 'white'} name='heart' />
                         </TouchableOpacity>
                         <TouchableOpacity style={{ marginEnd: 16 }} onPress={() => props.onItemClick(props.recipeId)}>
