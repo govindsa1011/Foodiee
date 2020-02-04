@@ -1,5 +1,6 @@
 export const BASE_URL = 'http://35.160.197.175:3006/api/v1/recipe/'
 export const GET_FEEDS = 'feeds'
+export const GET_FAV_COOKING_LIST = 'cooking-list'
 export const ADD_TO_WISHLIST = 'add-to-cooking-list'
 export const REMOVE_FROM_WISHLIST = 'rm-from-cooking-list'
 export const TOKEN = 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Mn0.MGBf-reNrHdQuwQzRDDNPMo5oWv4GlZKlDShFAAe16s'

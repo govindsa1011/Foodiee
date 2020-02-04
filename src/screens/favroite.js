@@ -1,115 +1,136 @@
 import React from 'react'
-import { View, FlatList } from 'react-native'
+import { View, FlatList, RefreshControl, Alert } from 'react-native'
 import ListItem from './ListItem';
+import * as Constant from '../utils/constants'
 
-export default class FavroiteScreen extends React.Component {
+export default class FavoriteScreen extends React.Component {
+
+    showDeleteDialog = (id) => {
+        Alert.alert(
+            '',
+            'Are you sure want to delete?',
+            [
+                {
+                    text: 'No',
+                    onPress: () => console.log('No Pressed'),
+                    style: 'cancel',
+                },
+                {
+                    text: 'Yes', onPress: () => {
+                        this.setState({
+                            itemArray: this.state.itemArray.filter(function (item) {
+                                return item.recipeId !== id
+                            })
+                        });
+                    }
+                },
+            ],
+            { cancelable: false },
+        );
+    }
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            isLoading: false,
+            itemArray: []
+        }
+    }
+
+    onItemClick = (id) => {
+        this.showDeleteDialog(id)
+    }
+
+    onHeartClick = (item) => {
+        this.removeFromFavroite(item.recipeId)
+    }
+
+    onRefresh = () => {
+        this.fetchCookingList()
+    };
+
+    removeFromFavroite = (recipeId) => {
+        fetch(Constant.BASE_URL+Constant.REMOVE_FROM_WISHLIST, {
+            method: 'POST',
+            headers: {
+                'Authorization': "Bearer "+ this.props.token,
+                'Content-Type':'application/json'
+            },
+            body: JSON.stringify(
+                {
+                    'recipeId': recipeId
+                }
+            )
+        }).then((response) => {
+            if (response.status == 200) {
+                return response.json()
+            } else {
+                return null
+            }
+        }).then((responseJson) => {
+            console.log(responseJson)
+            this.fetchCookingList()
+        })
+    }
+
+    fetchCookingList = () => {
+        this.setState({
+            isLoading: true
+        })
+
+        fetch(Constant.BASE_URL+Constant.GET_FAV_COOKING_LIST, {
+            method: 'GET',
+            headers: {
+                'Authorization': Constant.TOKEN
+            }
+        }).then((response) => {
+            if (response.status == 200) {
+                return response.json()
+            } else {
+                return null
+            }
+        }).then((responseJson) => {
+            this.setState({
+                isLoading: false,
+                itemArray: responseJson.map(function (item) {
+                    return {
+                        recipeId: item.recipeId,
+                        name: item.name,
+                        photo: item.photo,
+                        preparationTime: item.preparationTime,
+                        serves: item.serves,
+                        complexity: item.complexity,
+                        firstName: item.firstName,
+                        lastName: item.lastName,
+                    };
+                })
+            })
+        })
+    }
+
+    componentDidMount() {
+        return this.fetchCookingList()
+    }
 
     render() {
-        var itemArray = [
-            {
-                key: 1,
-                name: 'Pizza',
-                image: 'https://d1doqjmisr497k.cloudfront.net/-/media/kamispl-2016/recipe/2000/pizza_po_sycylijsku_2000.jpg',
-                isFav: true
-            },
-            {
-                key: 2,
-                name: 'Idli',
-                image: 'https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2017/10/22/Pictures/_6d1f2f96-b6e5-11e7-ab59-1b1e25230a21.jpg',
-                isFav: false
-            },
-            {
-                key: 3,
-                name: 'Dosa',
-                image: 'https://miro.medium.com/max/940/0*NsaoQuhkfTvO-h40.',
-                isFav: false
-            },
-            {
-                key: 4,
-                name: 'Panipuri',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/5/53/Panipuri%2C_Golgappa%2C_Phuchka.jpg',
-                isFav: true
-            },
-            {
-                key: 5,
-                name: 'Dabeli',
-                image: 'https://i.ytimg.com/vi/BqBlp_Mw8Qs/maxresdefault.jpg',
-                isFav: true
-            },
-            {
-                key: 6,
-                name: 'Vadapav',
-                image: 'https://www.fortunefoods.com/sites/default/files/styles/large_image/public/17.png',
-                isFav: false
-            },
-            {
-                key: 7,
-                name: 'Khaman Dhokla',
-                image: 'https://www.rasoimenu.com/wp-content/uploads/2016/09/Besan-Dhokla-Recipe-by-Rasoi-Menu.jpg',
-                isFav: false
-            },
-            {
-                key: 8,
-                name: 'Fafada Jalebi',
-                image: 'https://assets.traveltriangle.com/blog/wp-content/uploads/2018/02/Fafda-Jalebi.jpg',
-                isFav: true
-            },
-            {
-                key: 9,
-                name: 'Manchoorian',
-                image: 'https://ministryofcurry.com/wp-content/uploads/2017/09/IMG_4098.jpg',
-                isFav: false
-            },
-            {
-                key: 10,
-                name: 'Noodles',
-                image: 'https://cdn3.tmbi.com/toh/GoogleImagesPostCard/exps108597_SD163324B08_06_4b.jpg',
-                isFav: true
-            },
-            {
-                key: 11,
-                name: 'Chinese Bhel',
-                image: 'https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Dhara_Shah_/Chinese_bhel__No_onion_No_garlic.jpg',
-                isFav: true
-            },
-            {
-                key: 12,
-                name: 'Pav Bhaji',
-                image: 'https://i2.wp.com/www.neehees.com/wp-content/uploads/2019/02/Pav-Bhaji-WEB.png?fit=1024%2C614&ssl=1',
-                isFav: true
-            },
-            {
-                key: 13,
-                name: 'Burger',
-                image: 'https://images5.alphacoders.com/433/433534.jpg',
-                isFav: true
-            },
-            {
-                key: 14,
-                name: 'French Fries',
-                image: 'https://ak9.picdn.net/shutterstock/videos/33342769/thumb/1.jpg',
-                isFav: true
-            },
-            {
-                key: 15,
-                name: 'Gathiya',
-                image: 'http://makemyonlineshop.s3.amazonaws.com/86732681469108082.jpg',
-                isFav: false
-            }
-        ];
-
-        var filteredArray = itemArray.filter(info => {
-            return info.isFav === true
-        });
-
         return (
-            <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-                <FlatList style={{ width: '100%' }} showsVerticalScrollIndicator={false} data={filteredArray} renderItem={(info, index) => (
-                    <ListItem itemName={info.item.name}
-                        imageUrl={info.item.image}
-                        isGrid={false}
-                        isFav={info.item.isFav} />
-                )}>
+            <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+                <FlatList
+                    refreshControl={
+                        <RefreshControl refreshing={this.state.isLoading} onRefresh={this.onRefresh}></RefreshControl>
+                    }
+                    style={{ width: '100%' }} numColumns={this.props.isGrid ? 2 : 1} showsVerticalScrollIndicator={false} data={this.state.itemArray} renderItem={(info, index) => (
+                        <ListItem
+                            recipeId={info.item.recipeId}
+                            itemName={info.item.name}
+                            imageUrl={info.item.photo}
+                            item = {info.item}
+                            isGrid={false}
+                            isFav={true}
+                            onItemClick={this.onItemClick.bind(this)}
+                            onHeartClick={this.onHeartClick.bind(this)} />
+                    )}
+                    keyExtractor={(item, index) => String(index)}>
                 </FlatList>
             </View>
         )

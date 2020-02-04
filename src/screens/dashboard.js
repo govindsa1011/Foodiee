@@ -3,7 +3,7 @@ import { StatusBar, Text, View, TouchableOpacity } from 'react-native'
 import BottomNavigation, { IconTab } from 'react-native-material-bottom-navigation'
 import Icon from 'react-native-vector-icons/FontAwesome'
 import FavoriteScreen from './favroite';
-import HomeScreen from './home';
+import AddNewRecipe from './addRecipe';
 import SearchScreen from './search';
 import ProfileScreen from './profile';
 import CookingList from './cookinglist';
@@ -29,16 +29,23 @@ export default class DashBoardScreen extends React.Component {
             icon: 'heart'
         },
         {
+            key: 'add_recipe',
+            label: 'Add Recipe',
+            barColor: '#000000',
+            pressColor: 'rgba(255, 255, 255, 0.16)',
+            icon: 'plus-square'
+        },
+        {
             key: 'search',
             label: 'Search',
-            barColor: '#000000',
+            barColor: '#f7b944',
             pressColor: 'rgba(255, 255, 255, 0.16)',
             icon: 'search'
         },
         {
             key: 'profile',
             label: 'Profile',
-            barColor: '#f7b944',
+            barColor: '#000000',
             pressColor: 'rgba(255, 255, 255, 0.16)',
             icon: 'user-circle-o'
         }
@@ -48,7 +55,8 @@ export default class DashBoardScreen extends React.Component {
         activeTab: this.tabs[0].key,
         headerColor: '#000000',
         headerText: 'Home',
-        isGrid: true
+        isGrid: true,
+        token : ""
     };
 
     renderIcon = icon => ({ isActive }) => (
@@ -70,16 +78,26 @@ export default class DashBoardScreen extends React.Component {
         })
     }
 
+    componentDidMount(){
+        this.setState({
+            token : this.props.navigation.state.params.token
+        })        
+    }
+
     render() {
         let screenVisible;
 
         switch (this.state.activeTab) {
             case 'home': {
-                screenVisible = <CookingList isGrid={this.state.isGrid} />;
+                screenVisible = <CookingList isGrid={this.state.isGrid} token={this.state.token}/>;
                 break;
             }
             case 'fav': {
-                screenVisible = <FavoriteScreen />;
+                screenVisible = <FavoriteScreen token={this.state.token}/>;
+                break;
+            }
+            case 'add_recipe': {
+                screenVisible = <AddNewRecipe />;
                 break;
             }
             case 'search': {
@@ -147,17 +165,24 @@ export default class DashBoardScreen extends React.Component {
                                 });
                                 break;
                             }
+                            case 'add_recipe': {
+                                this.setState({
+                                    headerText: 'Add New Recipe',
+                                    headerColor: '#000000'
+                                });
+                                break;
+                            }
                             case 'search': {
                                 this.setState({
                                     headerText: 'Search',
-                                    headerColor: '#000000'
+                                    headerColor: '#f7b944'
                                 });
                                 break;
                             }
                             case 'profile': {
                                 this.setState({
                                     headerText: 'Profile',
-                                    headerColor: '#f7b944'
+                                    headerColor: '#000000'
                                 });
                                 break;
                             }

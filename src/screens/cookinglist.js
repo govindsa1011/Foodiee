@@ -31,6 +31,7 @@ export default class CookingList extends React.Component {
 
     constructor(props) {
         super(props);
+        
         this.state = {
             isLoading: false,
             itemArray: []
@@ -50,14 +51,14 @@ export default class CookingList extends React.Component {
     }
 
     onRefresh = () => {
-        this.fetchCookingList()
+        this.fetchFeeds()
     };
 
     addToFavroite = (recipeId) => {
         fetch(Constant.BASE_URL+Constant.ADD_TO_WISHLIST, {
             method: 'POST',
             headers: {
-                'Authorization': Constant.TOKEN,
+                'Authorization': "Bearer "+ this.props.token,
                 'Content-Type':'application/json'
             },
             body: JSON.stringify(
@@ -73,7 +74,7 @@ export default class CookingList extends React.Component {
             }
         }).then((responseJson) => {
             console.log(responseJson)
-            this.fetchCookingList()
+            this.fetchFeeds()
         })
     }
 
@@ -81,7 +82,7 @@ export default class CookingList extends React.Component {
         fetch(Constant.BASE_URL+Constant.REMOVE_FROM_WISHLIST, {
             method: 'POST',
             headers: {
-                'Authorization': Constant.TOKEN,
+                'Authorization': "Bearer "+ this.props.token,
                 'Content-Type':'application/json'
             },
             body: JSON.stringify(
@@ -97,11 +98,11 @@ export default class CookingList extends React.Component {
             }
         }).then((responseJson) => {
             console.log(responseJson)
-            this.fetchCookingList()
+            this.fetchFeeds()
         })
     }
 
-    fetchCookingList = () => {
+    fetchFeeds = () => {
         this.setState({
             isLoading: true
         })
@@ -109,7 +110,7 @@ export default class CookingList extends React.Component {
         fetch(Constant.BASE_URL+Constant.GET_FEEDS, {
             method: 'GET',
             headers: {
-                'Authorization': Constant.TOKEN
+                'Authorization': "Bearer "+ this.props.token
             }
         }).then((response) => {
             if (response.status == 200) {
@@ -138,7 +139,7 @@ export default class CookingList extends React.Component {
     }
 
     componentDidMount() {
-        return this.fetchCookingList()
+        return this.fetchFeeds()
     }
 
     render() {
