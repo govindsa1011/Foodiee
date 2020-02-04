@@ -107,34 +107,36 @@ export default class CookingList extends React.Component {
             isLoading: true
         })
 
-        fetch(Constant.BASE_URL+Constant.GET_FEEDS, {
-            method: 'GET',
-            headers: {
-                'Authorization': "Bearer "+ this.props.token
-            }
-        }).then((response) => {
-            if (response.status == 200) {
-                return response.json()
-            } else {
-                return null
-            }
-        }).then((responseJson) => {
-            this.setState({
-                isLoading: false,
-                itemArray: responseJson.map(function (item) {
-                    return {
-                        recipeId: item.recipeId,
-                        name: item.name,
-                        photo: item.photo,
-                        preparationTime: item.preparationTime,
-                        serves: item.serves,
-                        complexity: item.complexity,
-                        firstName: item.firstName,
-                        lastName: item.lastName,
-                        inCookingList: item.inCookingList
-                    };
+        setTimeout(()=> {
+            fetch(Constant.BASE_URL+Constant.GET_FEEDS, {
+                method: 'GET',
+                headers: {
+                    'Authorization': "Bearer "+ this.props.token
+                }
+            }).then((response) => {
+                if (response.status == 200) {
+                    return response.json()
+                } else {
+                    return null
+                }
+            }).then((responseJson) => {
+                this.setState({
+                    isLoading: false,
+                    itemArray: responseJson.map(function (item) {
+                        return {
+                            recipeId: item.recipeId,
+                            name: item.name,
+                            photo: item.photo,
+                            preparationTime: item.preparationTime,
+                            serves: item.serves,
+                            complexity: item.complexity,
+                            firstName: item.firstName,
+                            lastName: item.lastName,
+                            inCookingList: item.inCookingList
+                        };
+                    })
                 })
-            })
+            },500)
         })
     }
 
