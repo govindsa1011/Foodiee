@@ -159,6 +159,7 @@ export default class CookingList extends React.Component {
                             item = {info.item}
                             isGrid={this.props.isGrid}
                             isFav={info.item.inCookingList == 1}
+                            isHomeScreen = {true}
                             onItemClick={this.onItemClick.bind(this)}
                             onHeartClick={this.onHeartClick.bind(this)} />
                     )}

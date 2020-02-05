@@ -1,10 +1,25 @@
 import React from 'react'
-import { View, StyleSheet, ScrollView, Text, TextInput ,TouchableOpacity} from 'react-native'
+import { View, StyleSheet, ScrollView, Text, TextInput, TouchableOpacity } from 'react-native'
 import { Dropdown } from 'react-native-material-dropdown';
-import { RNChipView } from 'react-native-chip-view'
-
+import {ChipInput} from 'material-ui-chip-input';
 
 export default class AddNewRecipe extends React.Component {
+    state = {
+        chipsItems: []
+    }
+
+    handleAddChip = (chip) => {
+        chipsItems.push(chip)
+    }
+
+    handleDeleteChip = (chip, index) => {
+        // var array = [...this.state.chipsItems];
+        // if (index !== -1) {
+        //     array.splice(index, 1);
+        //     this.setState({ chipsItems: array });
+        // }
+    }
+
     render() {
         let preprationTimeArray = [{
             value: 'Minutes',
@@ -67,72 +82,16 @@ export default class AddNewRecipe extends React.Component {
                     </View>
 
                     <View style={{ width: '85%', marginTop: 20 }}>
-                        <Text style={{ fontSize: 20,fontWeight:'bold' }}>Tags:</Text>
-                        <View style={{ flex: 1, flexDirection: 'row', marginTop: 20, justifyContent: 'space-between' }}>
-                            <RNChipView
-                                height={35}
-                                ellipsizeMode="middle"
-                                titleStyle={{ fontSize: 16, paddingHorizontal: 10 }}
-                                title={'Item 1'}
-                                avatar={false}
-                            />
-                            <RNChipView
-                                height={35}
-                                ellipsizeMode="middle"
-                                titleStyle={{ fontSize: 16, paddingHorizontal: 10 }}
-                                title={'Item 2'}
-                                avatar={false}
-                            />
-                            <RNChipView
-                                height={35}
-                                ellipsizeMode="middle"
-                                titleStyle={{ fontSize: 16, paddingHorizontal: 10 }}
-                                title={'Item 3'}
-                                avatar={false}
-                            />
-                            <RNChipView
-                                height={35}
-                                ellipsizeMode="middle"
-                                titleStyle={{ fontSize: 16, paddingHorizontal: 10 }}
-                                title={'Item 4'}
-                                avatar={false}
-                            />
-                        </View>
-                        <View style={{ flex: 1, flexDirection: 'row', marginTop: 15, justifyContent: 'space-between' }}>
-                            <RNChipView
-                                height={35}
-                                backgroundColor='black'
-                                ellipsizeMode="middle"
-                                titleStyle={{ fontSize: 16, color:'white',paddingHorizontal: 10 }}
-                                title={'Item 5'}
-                                avatar={false}
-                            />
-                            <RNChipView
-                                height={35}
-                                ellipsizeMode="middle"
-                                titleStyle={{ fontSize: 16, paddingHorizontal: 10 }}
-                                title={'Item 6'}
-                                avatar={false}
-                            />
-                            <RNChipView
-                                height={35}
-                                ellipsizeMode="middle"
-                                titleStyle={{ fontSize: 16, paddingHorizontal: 10 }}
-                                title={'Item 7'}
-                                avatar={false}
-                            />
-                            <RNChipView
-                                height={35}
-                                ellipsizeMode="middle"
-                                titleStyle={{ fontSize: 16, paddingHorizontal: 10 }}
-                                title={'Item 8'}
-                                avatar={false}
-                            />
-                        </View>
+                        <Text style={{ fontSize: 20, fontWeight: 'bold' }}>Tags:</Text>
+                        {/* <ChipInput
+                            value={this.state.chipsItems}
+                            onAdd={(chip) => handleAddChip(chip)}
+                            onDelete={(chip, index) => handleDeleteChip(chip, index)}
+                        /> */}
                     </View>
 
                     <TouchableOpacity style={styles.submitButtonStyle}>
-                        <Text style={{color:'white',fontWeight:'bold',textAlign:'center'}}>Submit</Text>
+                        <Text style={{ color: 'white', fontWeight: 'bold', textAlign: 'center' }}>Submit</Text>
                     </TouchableOpacity>
                 </View>
             </ScrollView>
@@ -190,10 +149,10 @@ const styles = StyleSheet.create({
         color: '#000000'
     },
     submitButtonStyle: {
-        width:350,
+        width: 350,
         height: 40,
         marginTop: 60,
-        marginBottom:40,
+        marginBottom: 40,
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
@@ -204,7 +163,7 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         elevation: 3,
         color: 'white',
-        justifyContent:'center',
+        justifyContent: 'center',
         backgroundColor: '#000000'
     }
 })

@@ -127,6 +127,7 @@ export default class FavoriteScreen extends React.Component {
                             item = {info.item}
                             isGrid={false}
                             isFav={true}
+                            isHomeScreen = {false}
                             onItemClick={this.onItemClick.bind(this)}
                             onHeartClick={this.onHeartClick.bind(this)} />
                     )}

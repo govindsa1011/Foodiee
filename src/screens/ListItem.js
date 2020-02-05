@@ -1,28 +1,50 @@
 import React from 'react'
-import { View, Text, TouchableOpacity, StyleSheet, ImageBackground } from 'react-native'
+import { View, Text, TouchableOpacity, StyleSheet, ImageBackground, ActivityIndicator } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome'
 
-const listItem = (props) => (
-    <View style={{ alignItems: 'center', flex: props.isGrid ? 1 / 2 : 1 }}>
-        <View style={styles.bg_shadow}>
-            <ImageBackground source={props.imageUrl != null ? { uri: props.imageUrl } : require('../images/temp.jpg')} style={[styles.imgStyle, { height: props.isGrid ? 150 : 250 }]} imageStyle={{ borderRadius: 10 }} resizeMode="cover">
-                <View style={styles.transparentBg}>
-                    <View style={{ width: '50%' }}>
-                        <Text style={{ padding: 10, color: 'white', fontSize: props.isGrid ? 12 : 18 }}>{props.itemName}</Text>
-                    </View>
-                    <View style={{ width: '50%', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end' }}>
-                        <TouchableOpacity style={{ marginEnd: 16 }} onPress={() => props.onHeartClick(props.item)}>
-                            <Icon size={props.isGrid ? 16 : 24} color={props.isFav ? 'red' : 'white'} name='heart' />
-                        </TouchableOpacity>
-                        <TouchableOpacity style={{ marginEnd: 16 }} onPress={() => props.onItemClick(props.recipeId)}>
-                            <Icon size={props.isGrid ? 16 : 24} color="white" name='trash' />
-                        </TouchableOpacity>
-                    </View>
+class listItem extends React.Component {
+
+    state = {
+        isLoading: true
+    }
+
+    render() {
+        return (
+            <View style={{ alignItems: 'center', flex: this.props.isGrid ? 1 / 2 : 1 }}>
+                <View style={styles.bg_shadow}>
+                    <ImageBackground onLoad={() => {
+                        this.setState({
+                            isLoading: false
+                        })
+                    }}
+                        source={this.props.imageUrl != null ? { uri: this.props.imageUrl } : require('../images/temp.jpg')}
+                        style={[styles.imgStyle, { height: this.props.isGrid ? 150 : 250 }]}
+                        imageStyle={{ borderRadius: 10 }}
+                        resizeMode="cover">
+
+                        {this.state.isLoading ? <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', marginTop: 25 }}>
+                            <ActivityIndicator size="small" color={this.props.isHomeScreen ? "#000000":"#f7c744"} />
+                        </View> : <View></View>}
+
+                        <View style={styles.transparentBg}>
+                            <View style={{ width: '50%' }}>
+                                <Text style={{ padding: 10, color: 'white', fontSize: this.props.isGrid ? 12 : 18 }}>{this.props.itemName}</Text>
+                            </View>
+                            <View style={{ width: '50%', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end' }}>
+                                <TouchableOpacity style={{ marginEnd: 16 }} onPress={() => this.props.onHeartClick(this.props.item)}>
+                                    <Icon size={this.props.isGrid ? 16 : 24} color={this.props.isFav ? 'red' : 'white'} name='heart' />
+                                </TouchableOpacity>
+                                <TouchableOpacity style={{ marginEnd: 16 }} onPress={() => this.props.onItemClick(props.recipeId)}>
+                                    <Icon size={this.props.isGrid ? 16 : 24} color="white" name='trash' />
+                                </TouchableOpacity>
+                            </View>
+                        </View>
+                    </ImageBackground>
                 </View>
-            </ImageBackground>
-        </View>
-    </View>
-)
+            </View>
+        )
+    }
+}
 
 const styles = StyleSheet.create({
     bg_shadow: {
