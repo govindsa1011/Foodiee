@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, TouchableOpacity, StyleSheet, ImageBackground, ActivityIndicator } from 'react-native'
+import { View, Text, TouchableOpacity, StyleSheet, ImageBackground, ActivityIndicator, TouchableWithoutFeedback } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome'
 
 class listItem extends React.Component {
@@ -12,34 +12,36 @@ class listItem extends React.Component {
         return (
             <View style={{ alignItems: 'center', flex: this.props.isGrid ? 1 / 2 : 1 }}>
                 <View style={styles.bg_shadow}>
-                    <ImageBackground onLoad={() => {
-                        this.setState({
-                            isLoading: false
-                        })
-                    }}
-                        source={this.props.imageUrl != null ? { uri: this.props.imageUrl } : require('../images/temp.jpg')}
-                        style={[styles.imgStyle, { height: this.props.isGrid ? 150 : 250 }]}
-                        imageStyle={{ borderRadius: 10 }}
-                        resizeMode="cover">
+                    <TouchableWithoutFeedback onPress={() => this.props.onItemClick(this.props.item)}>
+                        <ImageBackground onLoad={() => {
+                            this.setState({
+                                isLoading: false
+                            })
+                        }}
+                            source={this.props.imageUrl != null ? { uri: this.props.imageUrl } : require('../images/placeholder.gif')}
+                            style={[styles.imgStyle, { height: this.props.isGrid ? 150 : 250 }]}
+                            imageStyle={{ borderRadius: 10 }}
+                            resizeMode="cover">
 
-                        {this.state.isLoading ? <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', marginTop: 25 }}>
-                            <ActivityIndicator size="small" color={this.props.isHomeScreen ? "#000000":"#f7c744"} />
-                        </View> : <View></View>}
+                            {this.state.isLoading ? <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', marginTop: 25 }}>
+                                <ActivityIndicator size="small" color={this.props.isHomeScreen ? "#000000" : "#f7c744"} />
+                            </View> : <View></View>}
 
-                        <View style={styles.transparentBg}>
-                            <View style={{ width: '50%' }}>
-                                <Text style={{ padding: 10, color: 'white', fontSize: this.props.isGrid ? 12 : 18 }}>{this.props.itemName}</Text>
+                            <View style={styles.transparentBg}>
+                                <View style={{ width: '50%' }}>
+                                    <Text style={{ padding: 10, color: 'white', fontSize: this.props.isGrid ? 12 : 18 }}>{this.props.itemName}</Text>
+                                </View>
+                                <View style={{ width: '50%', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end' }}>
+                                    <TouchableOpacity style={{ marginEnd: 16 }} onPress={() => this.props.onHeartClick(this.props.item)}>
+                                        <Icon size={this.props.isGrid ? 16 : 24} color={this.props.isFav ? 'red' : 'white'} name='heart' />
+                                    </TouchableOpacity>
+                                    <TouchableOpacity style={{ marginEnd: 16 }} onPress={() => this.props.onDeleteClick(this.props.recipeId)}>
+                                        <Icon size={this.props.isGrid ? 16 : 24} color="white" name='trash' />
+                                    </TouchableOpacity>
+                                </View>
                             </View>
-                            <View style={{ width: '50%', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end' }}>
-                                <TouchableOpacity style={{ marginEnd: 16 }} onPress={() => this.props.onHeartClick(this.props.item)}>
-                                    <Icon size={this.props.isGrid ? 16 : 24} color={this.props.isFav ? 'red' : 'white'} name='heart' />
-                                </TouchableOpacity>
-                                <TouchableOpacity style={{ marginEnd: 16 }} onPress={() => this.props.onItemClick(props.recipeId)}>
-                                    <Icon size={this.props.isGrid ? 16 : 24} color="white" name='trash' />
-                                </TouchableOpacity>
-                            </View>
-                        </View>
-                    </ImageBackground>
+                        </ImageBackground>
+                    </TouchableWithoutFeedback>
                 </View>
             </View>
         )
@@ -66,6 +68,7 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-end'
     },
     transparentBg: {
+        zIndex: 1,
         backgroundColor: 'rgba(0,0,0,0.7)',
         borderBottomLeftRadius: 10,
         borderBottomRightRadius: 10,

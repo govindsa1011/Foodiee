@@ -37,8 +37,12 @@ export default class FavoriteScreen extends React.Component {
         }
     }
 
-    onItemClick = (id) => {
+    onDeleteClick = (id) => {
         this.showDeleteDialog(id)
+    }
+
+    onItemClick = (info) => {
+        this.props.navigation.navigate("Detail",{data:info})
     }
 
     onHeartClick = (item) => {
@@ -119,7 +123,9 @@ export default class FavoriteScreen extends React.Component {
                     refreshControl={
                         <RefreshControl refreshing={this.state.isLoading} onRefresh={this.onRefresh}></RefreshControl>
                     }
-                    style={{ width: '100%' }} numColumns={this.props.isGrid ? 2 : 1} showsVerticalScrollIndicator={false} data={this.state.itemArray} renderItem={(info, index) => (
+                    style={{ width: '100%' }} 
+                    initialNumToRender={this.state.itemArray.length}
+                    numColumns={this.props.isGrid ? 2 : 1} showsVerticalScrollIndicator={false} data={this.state.itemArray} renderItem={(info, index) => (
                         <ListItem
                             recipeId={info.item.recipeId}
                             itemName={info.item.name}
@@ -129,6 +135,7 @@ export default class FavoriteScreen extends React.Component {
                             isFav={true}
                             isHomeScreen = {false}
                             onItemClick={this.onItemClick.bind(this)}
+                            onDeleteClick = {this.onDeleteClick.bind(this)}
                             onHeartClick={this.onHeartClick.bind(this)} />
                     )}
                     keyExtractor={(item, index) => String(index)}>

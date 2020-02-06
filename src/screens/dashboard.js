@@ -89,15 +89,15 @@ export default class DashBoardScreen extends React.Component {
 
         switch (this.state.activeTab) {
             case 'home': {
-                screenVisible = <CookingList isGrid={this.state.isGrid} token={this.state.token}/>;
+                screenVisible = <CookingList isGrid={this.state.isGrid} token={this.state.token} navigation={this.props.navigation}/>;
                 break;
             }
             case 'fav': {
-                screenVisible = <FavoriteScreen token={this.state.token}/>;
+                screenVisible = <FavoriteScreen token={this.state.token} navigation={this.props.navigation}/>;
                 break;
             }
             case 'add_recipe': {
-                screenVisible = <AddNewRecipe />;
+                screenVisible = <AddNewRecipe token={this.state.token}/>;
                 break;
             }
             case 'search': {

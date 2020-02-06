@@ -31,21 +31,25 @@ export default class CookingList extends React.Component {
 
     constructor(props) {
         super(props);
-        
+
         this.state = {
             isLoading: false,
             itemArray: []
         }
     }
 
-    onItemClick = (id) => {
+    onDeleteClick = (id) => {
         this.showDeleteDialog(id)
     }
 
+    onItemClick = (info) => {
+        this.props.navigation.navigate("Detail", { data: info })
+    }
+
     onHeartClick = (item) => {
-        if(item.inCookingList==1){
+        if (item.inCookingList == 1) {
             this.removeFromFavroite(item.recipeId)
-        }else{
+        } else {
             this.addToFavroite(item.recipeId)
         }
     }
@@ -55,11 +59,11 @@ export default class CookingList extends React.Component {
     };
 
     addToFavroite = (recipeId) => {
-        fetch(Constant.BASE_URL+Constant.ADD_TO_WISHLIST, {
+        fetch(Constant.BASE_URL + Constant.ADD_TO_WISHLIST, {
             method: 'POST',
             headers: {
-                'Authorization': "Bearer "+ this.props.token,
-                'Content-Type':'application/json'
+                'Authorization': "Bearer " + this.props.token,
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify(
                 {
@@ -79,11 +83,11 @@ export default class CookingList extends React.Component {
     }
 
     removeFromFavroite = (recipeId) => {
-        fetch(Constant.BASE_URL+Constant.REMOVE_FROM_WISHLIST, {
+        fetch(Constant.BASE_URL + Constant.REMOVE_FROM_WISHLIST, {
             method: 'POST',
             headers: {
-                'Authorization': "Bearer "+ this.props.token,
-                'Content-Type':'application/json'
+                'Authorization': "Bearer " + this.props.token,
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify(
                 {
@@ -107,11 +111,11 @@ export default class CookingList extends React.Component {
             isLoading: true
         })
 
-        setTimeout(()=> {
-            fetch(Constant.BASE_URL+Constant.GET_FEEDS, {
+        setTimeout(() => {
+            fetch(Constant.BASE_URL + Constant.GET_FEEDS, {
                 method: 'GET',
                 headers: {
-                    'Authorization': "Bearer "+ this.props.token
+                    'Authorization': "Bearer " + this.props.token
                 }
             }).then((response) => {
                 if (response.status == 200) {
@@ -132,11 +136,12 @@ export default class CookingList extends React.Component {
                             complexity: item.complexity,
                             firstName: item.firstName,
                             lastName: item.lastName,
+                            ytUrl: item.ytUrl,
                             inCookingList: item.inCookingList
                         };
                     })
                 })
-            },500)
+            }, 500)
         })
     }
 
@@ -151,16 +156,18 @@ export default class CookingList extends React.Component {
                     refreshControl={
                         <RefreshControl refreshing={this.state.isLoading} onRefresh={this.onRefresh}></RefreshControl>
                     }
+                    initialNumToRender={this.state.itemArray.length}
                     style={{ width: '100%' }} numColumns={this.props.isGrid ? 2 : 1} showsVerticalScrollIndicator={false} data={this.state.itemArray} renderItem={(info, index) => (
                         <ListItem
                             recipeId={info.item.recipeId}
                             itemName={info.item.name}
                             imageUrl={info.item.photo}
-                            item = {info.item}
+                            item={info.item}
                             isGrid={this.props.isGrid}
                             isFav={info.item.inCookingList == 1}
-                            isHomeScreen = {true}
+                            isHomeScreen={true}
                             onItemClick={this.onItemClick.bind(this)}
+                            onDeleteClick={this.onDeleteClick.bind(this)}
                             onHeartClick={this.onHeartClick.bind(this)} />
                     )}
                     keyExtractor={(item) => item.recipeId}

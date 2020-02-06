@@ -117,24 +117,6 @@ class LoginScreen extends React.Component {
                             strErrMsg: ""
                         })
 
-                        // Alert.alert('Success', 'Logged In', [
-                        //     {
-                        //         text: 'Cancel',
-                        //         style: 'default'
-                        //     },
-                        //     {
-                        //         text: 'Okay',
-                        //         style: 'default',
-                        //         onPress: () => {
-                        //             const navigateAction = StackActions.reset({
-                        //                 index: 0,
-                        //                 actions: [NavigationActions.navigate({ routeName: "DashBoard" })],
-                        //             });
-                        //             this.props.navigation.dispatch(navigateAction);
-                        //         }
-                        //     }
-                        // ])
-
                         const navigateAction = StackActions.reset({
                             index: 0,
                             actions: [NavigationActions.navigate({ routeName: "DashBoard" , params:{
