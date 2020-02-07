@@ -820,6 +820,10 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/layout_list_item.xml.flat",
+        "source": "/home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-image-picker/android/build/intermediates/packaged_res/debug/layout/list_item.xml"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-hdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
     },
@@ -1582,6 +1586,10 @@
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/xml_provider_paths.xml.flat",
+        "source": "/home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-image-picker/android/build/intermediates/packaged_res/debug/xml/provider_paths.xml"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal.9.png.flat",

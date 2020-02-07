@@ -1,16 +1,19 @@
 import React from 'react'
-import { View, StyleSheet, ScrollView, Text, TextInput, TouchableOpacity, ActivityIndicator } from 'react-native'
+import { View, StyleSheet, ScrollView, Text, TextInput, Image, TouchableOpacity, ActivityIndicator } from 'react-native'
 import { Dropdown } from 'react-native-material-dropdown';
-import ReactChipsInput from 'react-native-chips';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import * as Constant from '../utils/constants'
+import ImagePicker from 'react-native-image-picker';
 
 export default class AddNewRecipe extends React.Component {
     state = {
         strName: "", isNameValid: true,
         strPreprationTime: "", isTimeValid: true,
         strNumOfServes: "", isNumValid: true,
-        tagsArray: [],
-        isLoading: false
+        isLoading: false,
+        imgUri: undefined,
+        strSelectedTime: 'minutes', strComplexity: 'Easy',
+        viewHeight: 369
     }
 
     txtNameChangeHangler = (val) => {
@@ -31,8 +34,36 @@ export default class AddNewRecipe extends React.Component {
         })
     }
 
-    changeChips = (chips) => {
-        // console.log(this.refs.chipInput.state.chip);
+    cameraClick = () => {
+        const options = {
+            quality: 1.0,
+            maxWidth: 500,
+            maxHeight: 500,
+            storageOptions: {
+                skipBackup: true,
+            },
+        };
+
+        ImagePicker.showImagePicker(options, (response) => {
+            console.log('Response = ', response);
+
+            if (response.didCancel) {
+                console.log('User cancelled image picker');
+            } else if (response.error) {
+                console.log('ImagePicker Error: ', response.error);
+            } else if (response.customButton) {
+                console.log('User tapped custom button: ', response.customButton);
+            } else {
+                const source = { uri: response.uri };
+
+                // You can also display the image using data:
+                // const source = { uri: 'data:image/jpeg;base64,' + response.data };
+                console.log("Source:- " + source)
+                this.setState({
+                    imgUri: source.uri,
+                });
+            }
+        });
     }
 
     btnSubmitClick = () => {
@@ -68,9 +99,6 @@ export default class AddNewRecipe extends React.Component {
         }
 
         setTimeout(() => {
-
-            console.log(this.refs.chipInput.state.chips);
-
             if (this.state.isNameValid && this.state.isTimeValid && this.state.isNumValid) {
 
                 this.setState({
@@ -87,8 +115,7 @@ export default class AddNewRecipe extends React.Component {
                         'name': this.state.strName,
                         'preparationTime': this.state.strPreprationTime + " " + this.refs.dropdownTime.selectedItem().value,
                         'serves': this.state.strNumOfServes,
-                        'complexity': this.refs.dropdownComplexity.selectedItem().value,
-                        'metaTags': this.refs.chipInput.state.chips
+                        'complexity': this.refs.dropdownComplexity.selectedItem().value
                     })
                 }).then((response) => {
                     if (response.status == 200) {
@@ -97,24 +124,69 @@ export default class AddNewRecipe extends React.Component {
                         return null
                     }
                 }).then((responseJson) => {
-                    console.log(responseJson);
-                    this.setState({
-                        strName: "", isNameValid: true,
-                        strPreprationTime: "", isTimeValid: true,
-                        strNumOfServes: "", isNumValid: true,
-                        tagsArray: [],
-                        isLoading: false
-                    })
+                    console.log("Data Id:- " + responseJson.id);
 
-                    if (responseJson != null) {
-                        console.log("Success")
+                    if (this.state.imgUri!==undefined) {
+                        this.uploadImage(responseJson.id)
                     } else {
-                        console.log("Something went wrong");
+                        this.setState({
+                            strName: "", isNameValid: true,
+                            strPreprationTime: "", isTimeValid: true,
+                            strNumOfServes: "", isNumValid: true,
+                            strSelectedTime: 'minutes', strComplexity: 'Easy',
+                            isLoading: false
+                        })
                     }
                 })
             }
         }, 100)
     }
+
+    uploadImage = (recipeId) => {
+        fetch(Constant.BASE_URL + Constant.UPLOAD_RECIPE_PHOTO, {
+            method: 'POST',
+            headers: {
+                'Authorization': "Bearer " + this.props.token
+            },
+            body: this.createFormData(recipeId)
+        }).then((response) => {
+            if (response.status == 200) {
+                return response.json()
+            } else {
+                return null
+            }
+        }).then((responseJson) => {
+            console.log(responseJson);
+            this.setState({
+                strName: "", isNameValid: true,
+                strPreprationTime: "", isTimeValid: true,
+                strNumOfServes: "", isNumValid: true,
+                isLoading: false,
+                strSelectedTime: 'minutes', strComplexity: 'Easy',
+                imgUri: undefined
+            })
+
+            if (responseJson != null) {
+                console.log("Success")
+            } else {
+                console.log("Something went wrong");
+            }
+        })
+    }
+
+    createFormData = (id) => {
+        const data = new FormData();
+        var photo = {
+            uri: this.state.imgUri,
+            type: 'image/png',
+            name: 'photo.png',
+        };
+        data.append("photo", photo);
+        data.append("recipeId", id)
+        console.log("RecipeData " + data);
+        console.log("ID:" + id + " URI : " + this.state.imgUri)
+        return data;
+    };
 
     render() {
         let preprationTimeArray = [{
@@ -134,88 +206,104 @@ export default class AddNewRecipe extends React.Component {
         }];
 
         return (
-            <ScrollView style={styles.mainContainer}>
-                <View style={[styles.mainContainer, { alignItems: 'center' }]}>
-                    <TextInput style={styles.input}
-                        placeholder='Name'
-                        placeholderTextColor={this.state.isNameValid ? "#808080" : "#f7c744"}
-                        keyboardType='default'
-                        returnKeyType='next'
-                        autoCorrect={false}
-                        value={this.state.strName}
-                        onChangeText={this.txtNameChangeHangler}
-                        onSubmitEditing={() => this.refs.txtTime.focus()} />
+            <ScrollView style={{ width: '100%', height: '100%', flex: 1, backgroundColor: '#000000' }} contentContainerStyle={{ flexGrow: 1 }} scrollEnabled={true} keyboardShouldPersistTaps="always">
+                <View style={{ flex: 1 }}>
+                    <Image style={{ width: '100%', height: 300 }}
+                        source={this.state.imgUri !== undefined ? { uri: this.state.imgUri } : require('../images/placeholder.gif')}
+                        resizeMode='cover' />
+                    <View style={{ height: this.state.viewHeight }} />
+                    <View style={[styles.cardViewStyle, { alignItems: 'center' }]} onLayout={(event) => {
+                        this.setState({
+                            viewHeight: (event.nativeEvent.layout.height - 40)
+                        })
+                    }}>
+                        <TextInput style={[styles.input, { marginTop: 50 }]}
+                            placeholder='Name'
+                            placeholderTextColor={this.state.isNameValid ? "#808080" : "#f7c744"}
+                            keyboardType='default'
+                            returnKeyType='next'
+                            autoCorrect={false}
+                            value={this.state.strName}
+                            onChangeText={this.txtNameChangeHangler}
+                            onSubmitEditing={() => this.refs.txtTime.focus()} />
 
-                    <View style={{ flex: 1, flexDirection: 'row' }}>
-                        <TextInput style={[styles.inputSmall, { marginRight: 10 }]}
-                            placeholder='Prepration Time'
-                            placeholderTextColor={this.state.isTimeValid ? "#808080" : "#f7c744"}
+                        <View style={{ flex: 1, flexDirection: 'row' }}>
+                            <TextInput style={[styles.inputSmall, { marginRight: 10 }]}
+                                placeholder='Prepration Time'
+                                placeholderTextColor={this.state.isTimeValid ? "#808080" : "#f7c744"}
+                                keyboardType='numeric'
+                                returnKeyType='next'
+                                autoCorrect={false}
+                                value={this.state.strPreprationTime}
+                                onChangeText={this.txtTimeChangeHangler}
+                                onSubmitEditing={() => this.refs.dropdownTime.focus()}
+                                ref={"txtTime"} />
+                            <View style={[styles.dropDownStyle, { marginRight: 10 }]}>
+                                <Dropdown
+                                    animationDuration={100}
+                                    ref={"dropdownTime"}
+                                    containerStyle={{ marginTop: 10, marginStart: 10 }}
+                                    dropdownOffset={{ top: 0, left: 0 }}
+                                    rippleInsets={{ top: 0, bottom: 0 }}
+                                    value={this.state.strSelectedTime}
+                                    data={preprationTimeArray} />
+                            </View>
+                        </View>
+
+                        <TextInput style={[styles.input, { marginTop: 0 }]}
+                            placeholder='Number of Serves'
+                            placeholderTextColor={this.state.isNumValid ? "#808080" : "#f7c744"}
                             keyboardType='numeric'
                             returnKeyType='next'
                             autoCorrect={false}
-                            value={this.state.strPreprationTime}
-                            onChangeText={this.txtTimeChangeHangler}
-                            onSubmitEditing={() => this.refs.dropdownTime.focus()}
-                            ref={"txtTime"} />
-                        <View style={[styles.dropDownStyle, { marginRight: 10 }]}>
+                            value={this.state.strNumOfServes}
+                            onChangeText={this.txtNoServerChangeHangler}
+                            onSubmitEditing={() => this.refs.dropdownComplexity.focus()} />
+
+                        <View style={[styles.dropDownStyle, { width: '85%', marginTop: 10 }]}>
                             <Dropdown
+                                label="Complexity"
+                                ref={"dropdownComplexity"}
                                 animationDuration={100}
-                                ref={"dropdownTime"}
-                                containerStyle={{ marginTop: 10, marginStart: 10 }}
+                                containerStyle={{ marginTop: 10 }}
                                 dropdownOffset={{ top: 0, left: 0 }}
                                 rippleInsets={{ top: 0, bottom: 0 }}
-                                value={preprationTimeArray[0].value}
-                                data={preprationTimeArray} />
+                                value={this.state.strComplexity}
+                                data={complexityArray} />
                         </View>
+
+                        {this.state.isLoading ? <ActivityIndicator size="large" color="#000000" style={{ marginTop: 60,marginBottom:60 }} /> :
+                            <TouchableOpacity style={styles.submitButtonStyle} onPress={() => this.btnSubmitClick()}>
+                                <Text style={{ color: 'white', fontWeight: 'bold', textAlign: 'center' }}>Submit</Text>
+                            </TouchableOpacity>}
                     </View>
-                    <TextInput style={[styles.input, { marginTop: 0 }]}
-                        placeholder='Number of Serves'
-                        placeholderTextColor={this.state.isNumValid ? "#808080" : "#f7c744"}
-                        keyboardType='numeric'
-                        returnKeyType='next'
-                        autoCorrect={false}
-                        value={this.state.strNumOfServes}
-                        onChangeText={this.txtNoServerChangeHangler}
-                        onSubmitEditing={() => this.refs.dropdownComplexity.focus()} />
-
-                    <View style={[styles.dropDownStyle, { width: '85%', marginTop: 10 }]}>
-                        <Dropdown
-                            label="Complexity"
-                            ref={"dropdownComplexity"}
-                            animationDuration={100}
-                            containerStyle={{ marginTop: 10 }}
-                            dropdownOffset={{ top: 0, left: 0 }}
-                            rippleInsets={{ top: 0, bottom: 0 }}
-                            value={complexityArray[0].value}
-                            data={complexityArray} />
+                    <View style={styles.cameraIconStyle}>
+                        <TouchableOpacity style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }} onPress={() => this.cameraClick()}>
+                            <Icon size={20} color="black" name='camera' style={{ textAlignVertical: 'center' }} />
+                        </TouchableOpacity>
                     </View>
-
-                    <View style={{ width: '85%' }}>
-                        <ReactChipsInput label="Add Tags"
-                            onChangeChips={(chips) => this.changeChips(chips)}
-                            alertRequired={false}
-                            ref={"chipInput"}
-                            chipStyle={{ borderColor: 'black', backgroundColor: 'white' }} />
-
-                    </View>
-
-                    {this.state.isLoading ? <ActivityIndicator size="large" color="#000000" style={{marginTop:60}} /> : 
-                    <TouchableOpacity style={styles.submitButtonStyle} onPress={() => this.btnSubmitClick()}>
-                        <Text style={{ color: 'white', fontWeight: 'bold', textAlign: 'center' }}>Submit</Text>
-                    </TouchableOpacity>}
                 </View>
-
             </ScrollView>
         )
     }
 }
 
 const styles = StyleSheet.create({
-    mainContainer: {
+    cardViewStyle: {
         width: '100%',
-        height: '100%',
-        flex: 1,
-        backgroundColor: '#ffffff'
+        position: 'absolute',
+        marginTop: 260,
+        backgroundColor: 'white',
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 8,
+        },
+        borderTopLeftRadius: 30,
+        borderTopRightRadius: 30,
+        shadowOpacity: 0.5,
+        shadowRadius: 10,
+        elevation: 12,
     },
     input: {
         width: "90%",
@@ -276,5 +364,26 @@ const styles = StyleSheet.create({
         color: 'white',
         justifyContent: 'center',
         backgroundColor: '#000000'
+    },
+    cameraIconStyle: {
+        position: 'absolute',
+        width: 60,
+        height: 60,
+        alignSelf: 'flex-end',
+        marginTop: 230,
+        right: 30,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 50,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+
+        elevation: 15,
+        backgroundColor: 'white'
     }
 })
