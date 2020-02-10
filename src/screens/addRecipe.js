@@ -136,6 +136,7 @@ export default class AddNewRecipe extends React.Component {
                             strSelectedTime: 'minutes', strComplexity: 'Easy',
                             isLoading: false
                         })
+                        this.props.onSuccess()
                     }
                 })
             }
@@ -165,7 +166,8 @@ export default class AddNewRecipe extends React.Component {
                 strSelectedTime: 'minutes', strComplexity: 'Easy',
                 imgUri: undefined
             })
-
+            this.props.onSuccess()
+            
             if (responseJson != null) {
                 console.log("Success")
             } else {

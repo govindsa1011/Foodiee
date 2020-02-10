@@ -2,6 +2,7 @@ import React from 'react'
 import { View, FlatList, RefreshControl, Alert } from 'react-native'
 import ListItem from './ListItem';
 import * as Constant from '../utils/constants'
+import ProgressLoader from 'rn-progress-loader';
 
 export default class CookingList extends React.Component {
 
@@ -17,11 +18,7 @@ export default class CookingList extends React.Component {
                 },
                 {
                     text: 'Yes', onPress: () => {
-                        this.setState({
-                            itemArray: this.state.itemArray.filter(function (item) {
-                                return item.recipeId !== id
-                            })
-                        });
+                        this.deleteItem(id)
                     }
                 },
             ],
@@ -29,12 +26,43 @@ export default class CookingList extends React.Component {
         );
     }
 
+    deleteItem = (recipeId) => {
+        this.setState({
+            isDeleting: true
+        })
+
+        fetch(Constant.BASE_URL + recipeId, {
+            method: 'DELETE',
+            headers: {
+                'Content-type': 'application/json',
+                'Authorization': "Bearer " + this.props.token
+            }
+        }).then((response) => {
+            if (response.status == 200) {
+                return response.json()
+            } else {
+                return null
+            }
+        }).then((responseJson) => {
+            console.log("Delete Response:- " + responseJson);
+
+            this.setState({
+                itemArray: this.state.itemArray.filter(function (item) {
+                    return item.recipeId !== recipeId
+                }),
+                isDeleting: false
+            });
+
+        })
+    }
+
     constructor(props) {
         super(props);
 
         this.state = {
             isLoading: false,
-            itemArray: []
+            itemArray: [],
+            isDeleting: false
         }
     }
 
@@ -43,7 +71,7 @@ export default class CookingList extends React.Component {
     }
 
     onItemClick = (info) => {
-        this.props.navigation.navigate("Detail", { data: info })
+        this.props.navigation.navigate("Detail", { data: info, token: this.props.token })
     }
 
     onHeartClick = (item) => {
@@ -152,6 +180,11 @@ export default class CookingList extends React.Component {
     render() {
         return (
             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+                <ProgressLoader
+                    visible={this.state.isDeleting}
+                    isModal={true} isHUD={true}
+                    hudColor={"#000000"}
+                    color={"#FFFFFF"} />
                 <FlatList
                     refreshControl={
                         <RefreshControl refreshing={this.state.isLoading} onRefresh={this.onRefresh}></RefreshControl>

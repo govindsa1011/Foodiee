@@ -2,6 +2,9 @@ import React from 'react'
 import { View, Image, Text, ActivityIndicator, TouchableOpacity, ImageBackground, StyleSheet, StatusBar } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { RNChipView } from 'react-native-chip-view';
+import ImagePicker from 'react-native-image-picker';
+import * as Constant from '../utils/constants';
+import ProgressLoader from 'rn-progress-loader';
 
 export default class DetailScreen extends React.Component {
     static navigationOptions = {
@@ -9,11 +12,100 @@ export default class DetailScreen extends React.Component {
     };
 
     state = {
-        isImgLoading: true
+        isImgLoading: true,
+        imgUri: undefined,
+        isUploading: false,
+        token: ''
     }
+
+    cameraClick = (recipeId) => {
+        const options = {
+            quality: 1.0,
+            maxWidth: 500,
+            maxHeight: 500,
+            storageOptions: {
+                skipBackup: true,
+            },
+        };
+
+        ImagePicker.showImagePicker(options, (response) => {
+            console.log('Response = ', response);
+
+            if (response.didCancel) {
+                console.log('User cancelled image picker');
+            } else if (response.error) {
+                console.log('ImagePicker Error: ', response.error);
+            } else if (response.customButton) {
+                console.log('User tapped custom button: ', response.customButton);
+            } else {
+                const source = { uri: response.uri };
+
+                // You can also display the image using data:
+                // const source = { uri: 'data:image/jpeg;base64,' + response.data };
+                console.log("Source:- " + source)
+                this.setState({
+                    imgUri: source.uri,
+                });
+
+                this.uploadImage(recipeId)
+            }
+        });
+    }
+
+    uploadImage = (recipeId) => {
+        this.setState({
+            isUploading: true
+        })
+
+        fetch(Constant.BASE_URL + Constant.UPLOAD_RECIPE_PHOTO, {
+            method: 'POST',
+            headers: {
+                'Authorization': "Bearer " + this.state.token
+            },
+            body: this.createFormData(recipeId)
+        }).then((response) => {
+            if (response.status == 200) {
+                console.log(response);
+                return response.json()
+            } else {
+                return null
+            }
+        }).then((responseJson) => {
+            console.log(responseJson);
+            this.setState({
+                isUploading: false
+            })
+        })
+    }
+
+    componentDidMount() {
+        setTimeout(() => {
+            this.setState({
+                token: this.props.navigation.state['params']['token'],
+                imgUri: this.props.navigation.state['params']['data'].imgUri
+            })
+
+            console.log(this.state.token)
+        },100)
+    }
+
+    createFormData = (id) => {
+        const data = new FormData();
+        var photo = {
+            uri: this.state.imgUri,
+            type: 'image/png',
+            name: 'photo.png',
+        };
+        data.append("photo", photo);
+        data.append("recipeId", id)
+        console.log("RecipeData " + data);
+        console.log("ID:" + id + " URI : " + this.state.imgUri)
+        return data;
+    };
 
     render() {
         let data = this.props.navigation.state['params']['data'];
+
         var chipsTags = ["Gujarati", "Rajasthani", "Punjabi", "South Indian", "Breakfast", "Crunchy", "Fast Food"];
         var chipsView = [];
         for (let i = 0; i < 7; i++) {
@@ -30,6 +122,11 @@ export default class DetailScreen extends React.Component {
         }
         return (
             <View style={{ flex: 1, backgroundColor: 'rgba(165,165,165,0.2)' }}>
+                <ProgressLoader
+                    visible={this.state.isUploading}
+                    isModal={true} isHUD={true}
+                    hudColor={"#000000"}
+                    color={"#FFFFFF"} />
                 <StatusBar
                     backgroundColor="transparent"
                     barStyle="light-content"
@@ -41,7 +138,7 @@ export default class DetailScreen extends React.Component {
                             isImgLoading: false
                         })
                     }}
-                    source={data.photo != null ? { uri: data.photo } : require('../images/placeholder.gif')}
+                    source={this.state.imgUri != undefined ? { uri: this.state.imgUri } : (data.photo != null ? { uri: data.photo } : require('../images/placeholder.gif'))}
                     resizeMode='cover'>
                     <TouchableOpacity style={styles.circleShadow} onPress={() => this.props.navigation.pop()}>
                         <Icon size={16} color="white" name='chevron-left' />
@@ -78,7 +175,7 @@ export default class DetailScreen extends React.Component {
                     </View>
                 </View>
                 <View style={styles.cameraIconStyle}>
-                    <TouchableOpacity style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+                    <TouchableOpacity style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }} onPress={() => this.cameraClick(data.recipeId)}>
                         <Icon size={20} color="black" name='camera' style={{ textAlignVertical: 'center' }} />
                     </TouchableOpacity>
                 </View>

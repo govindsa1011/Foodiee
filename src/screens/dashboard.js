@@ -78,6 +78,13 @@ export default class DashBoardScreen extends React.Component {
         })
     }
 
+    addSuccess = () => {
+
+        this.setState({
+            activeTab : 'add_recipe'
+        })
+    }
+
     componentDidMount(){
         this.setState({
             token : this.props.navigation.state.params.token
@@ -97,7 +104,7 @@ export default class DashBoardScreen extends React.Component {
                 break;
             }
             case 'add_recipe': {
-                screenVisible = <AddNewRecipe token={this.state.token}/>;
+                screenVisible = <AddNewRecipe token={this.state.token} onSuccess={this.addSuccess}/>;
                 break;
             }
             case 'search': {
@@ -140,10 +147,11 @@ export default class DashBoardScreen extends React.Component {
                         : <View></View>}
                 </View>
                 <View style={{ flex: 1 }}>
-                    {screenVisible}
+                    {this.state.activeTab?screenVisible:screenVisible}
                 </View>
                 <BottomNavigation
                     tabs={this.tabs}
+                    ref = {'bottomNav'}
                     activeTab={this.state.activeTab}
                     onTabPress={newTab => {
                         this.setState({
