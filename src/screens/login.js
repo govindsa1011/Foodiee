@@ -16,6 +16,9 @@ import {
 } from 'react-native';
 import ShakingText from 'react-native-shaking-text';
 import { StackActions, NavigationActions } from 'react-navigation';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import AsyncStorage from '@react-native-community/async-storage';
 
 class LoginScreen extends React.Component {
     static navigationOptions = {
@@ -117,14 +120,16 @@ class LoginScreen extends React.Component {
                             strErrMsg: ""
                         })
 
+                        //Update token in redux
+                        this.props.updateT(responseJson.token)
+
+                        this.storeData(responseJson.token)
+
                         const navigateAction = StackActions.reset({
                             index: 0,
-                            actions: [NavigationActions.navigate({ routeName: "DashBoard" , params:{
-                                "token": responseJson.token
-                            }})],
+                            actions: [NavigationActions.navigate({ routeName: "DashBoard" })],
                         });
                         this.props.navigation.dispatch(navigateAction);
-
                     } else {
                         this.setState({
                             strErrMsg: "Email and password does not match."
@@ -133,6 +138,15 @@ class LoginScreen extends React.Component {
                 })
             }
         }, 100)
+    }
+
+    storeData = async (token) => {
+        try {
+            await AsyncStorage.setItem('@store_token', token)
+        } catch (e) {
+            // saving error
+            console.log(e)
+        }
     }
 
     txtEmailChangeHangler = (val) => {
@@ -274,4 +288,23 @@ const styles = StyleSheet.create({
     }
 });
 
-export default LoginScreen
+const updateToken = (token) => {
+    return {
+        type: 'TOKEN_UPDATE',
+        payload: token
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return bindActionCreators({
+        updateT: (token) => updateToken(token)
+    }, dispatch)
+}
+
+const mapStateToProps = (newState) => {
+    return {
+        token: newState.token
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(LoginScreen)

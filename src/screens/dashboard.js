@@ -7,8 +7,9 @@ import AddNewRecipe from './addRecipe';
 import SearchScreen from './search';
 import ProfileScreen from './profile';
 import CookingList from './cookinglist';
+import { connect } from 'react-redux';
 
-export default class DashBoardScreen extends React.Component {
+class DashBoardScreen extends React.Component {
     static navigationOptions = {
         header: null
     };
@@ -55,8 +56,7 @@ export default class DashBoardScreen extends React.Component {
         activeTab: this.tabs[0].key,
         headerColor: '#000000',
         headerText: 'Home',
-        isGrid: true,
-        token : ""
+        isGrid: true
     };
 
     renderIcon = icon => ({ isActive }) => (
@@ -79,16 +79,9 @@ export default class DashBoardScreen extends React.Component {
     }
 
     addSuccess = () => {
-
         this.setState({
             activeTab : 'add_recipe'
         })
-    }
-
-    componentDidMount(){
-        this.setState({
-            token : this.props.navigation.state.params.token
-        })        
     }
 
     render() {
@@ -96,19 +89,19 @@ export default class DashBoardScreen extends React.Component {
 
         switch (this.state.activeTab) {
             case 'home': {
-                screenVisible = <CookingList isGrid={this.state.isGrid} token={this.state.token} navigation={this.props.navigation}/>;
+                screenVisible = <CookingList isGrid={this.state.isGrid} token={this.props.token} navigation={this.props.navigation}/>;
                 break;
             }
             case 'fav': {
-                screenVisible = <FavoriteScreen token={this.state.token} navigation={this.props.navigation}/>;
+                screenVisible = <FavoriteScreen token={this.props.token} navigation={this.props.navigation}/>;
                 break;
             }
             case 'add_recipe': {
-                screenVisible = <AddNewRecipe token={this.state.token} onSuccess={this.addSuccess}/>;
+                screenVisible = <AddNewRecipe token={this.props.token} onSuccess={this.addSuccess}/>;
                 break;
             }
             case 'search': {
-                screenVisible = <SearchScreen />;
+                screenVisible = <SearchScreen token={this.props.token}/>;
                 break;
             }
             case 'profile': {
@@ -137,6 +130,7 @@ export default class DashBoardScreen extends React.Component {
                         flex: 1,
                         marginStart: 34,
                         fontSize: 18,
+                        fontFamily:'Poppins-Bold',
                         fontWeight: '900'
                     }}>{this.state.headerText}</Text>
 
@@ -210,3 +204,11 @@ export default class DashBoardScreen extends React.Component {
         )
     }
 }
+
+const mapStateToProps = (state) => {
+    return{
+        token : state.token
+    }
+}
+
+export default connect(mapStateToProps)(DashBoardScreen)

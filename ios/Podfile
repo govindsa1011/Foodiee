@@ -38,6 +38,8 @@ target 'Foodiee' do
 
   pod 'react-native-image-picker', :path => '../node_modules/react-native-image-picker'
 
+  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
+
   target 'FoodieeTests' do
     inherit! :search_paths
     # Pods for testing

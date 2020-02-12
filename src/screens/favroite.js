@@ -113,7 +113,7 @@ export default class FavoriteScreen extends React.Component {
         fetch(Constant.BASE_URL + Constant.GET_FAV_COOKING_LIST, {
             method: 'GET',
             headers: {
-                'Authorization': Constant.TOKEN
+                'Authorization': "Bearer " + this.props.token
             }
         }).then((response) => {
             if (response.status == 200) {

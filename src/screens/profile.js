@@ -35,7 +35,7 @@ export default class Profile extends Component {
 
 const styles = StyleSheet.create({
     header: {
-        backgroundColor: "#f7b944",
+        backgroundColor: "black",
         height: 150,
     },
     avatar: {
@@ -50,9 +50,9 @@ const styles = StyleSheet.create({
         marginTop: 80
     },
     name: {
-        fontSize: 22,
+        fontSize: 24,
         color: "#FFFFFF",
-        fontWeight: '600',
+        fontWeight: '100',
     },
     body: {
         marginTop: 40,
@@ -65,12 +65,12 @@ const styles = StyleSheet.create({
     name: {
         fontSize: 28,
         color: "#696969",
-        fontWeight: "600"
+        fontFamily:'Poppins-Bold'
     },
     info: {
         fontSize: 16,
         color: "#000000",
-        fontWeight: 'bold',
+        fontFamily:'Poppins-Medium',
         marginTop: 10
     },
     description: {
@@ -88,6 +88,6 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         width: 250,
         borderRadius: 30,
-        backgroundColor: "#f7b944",
+        backgroundColor: "black",
     },
 });

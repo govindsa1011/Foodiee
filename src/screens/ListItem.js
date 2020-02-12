@@ -18,7 +18,7 @@ class listItem extends React.Component {
                                 isLoading: false
                             })
                         }}
-                            source={this.props.imageUrl != null ? { uri: this.props.imageUrl } : require('../images/placeholder.gif')}
+                            source={this.props.imageUrl != null ? { uri: this.props.imageUrl } : require('../images/placeholder.png')}
                             style={[styles.imgStyle, { height: this.props.isGrid ? 150 : 250 }]}
                             imageStyle={{ borderRadius: 10 }}
                             resizeMode="cover">
@@ -29,7 +29,7 @@ class listItem extends React.Component {
 
                             <View style={styles.transparentBg}>
                                 <View style={{ width: '50%' }}>
-                                    <Text style={{ padding: 10, color: 'white', fontSize: this.props.isGrid ? 12 : 18 }}>{this.props.itemName}</Text>
+                                    <Text style={{ padding: 10, color: 'white', fontFamily: 'Poppins-Regular', fontSize: this.props.isGrid ? 12 : 18 }}>{this.props.itemName}</Text>
                                 </View>
                                 <View style={{ width: '50%', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end' }}>
                                     <TouchableOpacity style={{ marginEnd: 16 }} onPress={() => this.props.onHeartClick(this.props.item)}>

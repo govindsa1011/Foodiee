@@ -211,7 +211,7 @@ export default class AddNewRecipe extends React.Component {
             <ScrollView style={{ width: '100%', height: '100%', flex: 1, backgroundColor: '#000000' }} contentContainerStyle={{ flexGrow: 1 }} scrollEnabled={true} keyboardShouldPersistTaps="always">
                 <View style={{ flex: 1 }}>
                     <Image style={{ width: '100%', height: 300 }}
-                        source={this.state.imgUri !== undefined ? { uri: this.state.imgUri } : require('../images/placeholder.gif')}
+                        source={this.state.imgUri !== undefined ? { uri: this.state.imgUri } : require('../images/placeholder.png')}
                         resizeMode='cover' />
                     <View style={{ height: this.state.viewHeight }} />
                     <View style={[styles.cardViewStyle, { alignItems: 'center' }]} onLayout={(event) => {
@@ -244,6 +244,8 @@ export default class AddNewRecipe extends React.Component {
                                 <Dropdown
                                     animationDuration={100}
                                     ref={"dropdownTime"}
+                                    style={{fontFamily:'Poppins-Medium'}}
+                                    itemTextStyle={{fontFamily:'Poppins-Medium'}}
                                     containerStyle={{ marginTop: 10, marginStart: 10 }}
                                     dropdownOffset={{ top: 0, left: 0 }}
                                     rippleInsets={{ top: 0, bottom: 0 }}
@@ -265,7 +267,10 @@ export default class AddNewRecipe extends React.Component {
                         <View style={[styles.dropDownStyle, { width: '85%', marginTop: 10 }]}>
                             <Dropdown
                                 label="Complexity"
+                                style={{fontFamily:'Poppins-Medium'}}
                                 ref={"dropdownComplexity"}
+                                itemTextStyle={{fontFamily:'Poppins-Medium'}}
+                                labelTextStyle={{fontFamily:'Poppins-Medium'}}
                                 animationDuration={100}
                                 containerStyle={{ marginTop: 10 }}
                                 dropdownOffset={{ top: 0, left: 0 }}
@@ -276,7 +281,7 @@ export default class AddNewRecipe extends React.Component {
 
                         {this.state.isLoading ? <ActivityIndicator size="large" color="#000000" style={{ marginTop: 60,marginBottom:60 }} /> :
                             <TouchableOpacity style={styles.submitButtonStyle} onPress={() => this.btnSubmitClick()}>
-                                <Text style={{ color: 'white', fontWeight: 'bold', textAlign: 'center' }}>Submit</Text>
+                                <Text style={{ color: 'white', textAlign: 'center',fontFamily:'Poppins-Bold' }}>Submit</Text>
                             </TouchableOpacity>}
                     </View>
                     <View style={styles.cameraIconStyle}>
@@ -316,6 +321,9 @@ const styles = StyleSheet.create({
             width: 0,
             height: 2,
         },
+        fontSize:12,
+        fontFamily:'Poppins-Medium',
+        includeFontPadding:false,
         shadowOpacity: 0.30,
         shadowRadius: 4,
         borderRadius: 20,
@@ -323,6 +331,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'rgba(255,255,255,0.3)',
         color: '#000000',
         paddingStart: 20,
+        paddingBottom:5,
         paddingHorizontal: 10
     },
     inputSmall: {
@@ -334,6 +343,9 @@ const styles = StyleSheet.create({
             width: 0,
             height: 2,
         },
+        fontSize:12,
+        fontFamily:'Poppins-Medium',
+        includeFontPadding:false,
         shadowOpacity: 0.30,
         shadowRadius: 4,
         borderRadius: 20,
@@ -341,6 +353,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'rgba(255,255,255,0.3)',
         color: '#000000',
         paddingStart: 20,
+        paddingBottom:5,
         paddingHorizontal: 10
     },
     dropDownStyle: {

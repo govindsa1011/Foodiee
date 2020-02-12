@@ -5,8 +5,9 @@ import { RNChipView } from 'react-native-chip-view';
 import ImagePicker from 'react-native-image-picker';
 import * as Constant from '../utils/constants';
 import ProgressLoader from 'rn-progress-loader';
+import { connect } from 'react-redux';
 
-export default class DetailScreen extends React.Component {
+class DetailScreen extends React.Component {
     static navigationOptions = {
         header: null
     };
@@ -14,8 +15,7 @@ export default class DetailScreen extends React.Component {
     state = {
         isImgLoading: true,
         imgUri: undefined,
-        isUploading: false,
-        token: ''
+        isUploading: false
     }
 
     cameraClick = (recipeId) => {
@@ -60,7 +60,7 @@ export default class DetailScreen extends React.Component {
         fetch(Constant.BASE_URL + Constant.UPLOAD_RECIPE_PHOTO, {
             method: 'POST',
             headers: {
-                'Authorization': "Bearer " + this.state.token
+                'Authorization': "Bearer " + this.props.token
             },
             body: this.createFormData(recipeId)
         }).then((response) => {
@@ -81,12 +81,9 @@ export default class DetailScreen extends React.Component {
     componentDidMount() {
         setTimeout(() => {
             this.setState({
-                token: this.props.navigation.state['params']['token'],
                 imgUri: this.props.navigation.state['params']['data'].imgUri
             })
-
-            console.log(this.state.token)
-        },100)
+        }, 100)
     }
 
     createFormData = (id) => {
@@ -138,7 +135,7 @@ export default class DetailScreen extends React.Component {
                             isImgLoading: false
                         })
                     }}
-                    source={this.state.imgUri != undefined ? { uri: this.state.imgUri } : (data.photo != null ? { uri: data.photo } : require('../images/placeholder.gif'))}
+                    source={this.state.imgUri != undefined ? { uri: this.state.imgUri } : (data.photo != null ? { uri: data.photo } : require('../images/placeholder.png'))}
                     resizeMode='cover'>
                     <TouchableOpacity style={styles.circleShadow} onPress={() => this.props.navigation.pop()}>
                         <Icon size={16} color="white" name='chevron-left' />
@@ -150,27 +147,27 @@ export default class DetailScreen extends React.Component {
 
                 </ImageBackground>
                 <View style={styles.cardViewStyle}>
-                    <Text style={{ fontSize: 20, fontWeight: 'bold' }}>{data.name}</Text>
+                    <Text style={{ fontSize: 20, fontFamily: 'Poppins-Bold' }}>{data.name}</Text>
                     <View style={{ flexDirection: 'row', marginTop: 5 }}>
                         <Icon size={16} color="grey" name='user' style={{ textAlignVertical: 'center' }} />
-                        <Text style={{ textAlignVertical: 'center', paddingStart: 5, color: 'grey' }}>{data.firstName + " " + data.lastName}</Text>
+                        <Text style={{ textAlignVertical: 'center', fontFamily: 'Poppins-Regular', includeFontPadding: false, paddingStart: 5, color: 'grey' }}>{data.firstName + " " + data.lastName}</Text>
                     </View>
-                    <Text style={{ marginTop: 24, fontSize: 20, fontWeight: 'bold' }}>Tags:</Text>
+                    <Text style={{ marginTop: 24, fontSize: 20, fontFamily: 'Poppins-Bold' }}>Tags:</Text>
                     <View style={{ flexDirection: 'row', flexWrap: "wrap" }}>
                         {chipsView}
                     </View>
                     <View style={{ marginTop: 40, flexDirection: 'row', justifyContent: 'space-evenly' }}>
                         <View style={[styles.smallCardStyle, { marginRight: 20 }]}>
                             <Icon size={24} color="black" name='clock-o' style={{ textAlignVertical: 'center' }} />
-                            <Text style={{ fontSize: 12, marginTop: 8 }}>{data.preparationTime}</Text>
+                            <Text style={{ fontSize: 12, marginTop: 8, fontFamily: 'Poppins-Medium' }}>{data.preparationTime}</Text>
                         </View>
                         <View style={[styles.smallCardStyle, { marginRight: 20 }]}>
                             <Icon size={24} color="black" name='cogs' style={{ textAlignVertical: 'center' }} />
-                            <Text style={{ fontSize: 12, marginTop: 8 }}>{data.complexity}</Text>
+                            <Text style={{ fontSize: 12, marginTop: 8, fontFamily: 'Poppins-Medium' }}>{data.complexity}</Text>
                         </View>
                         <View style={styles.smallCardStyle}>
                             <Icon size={24} color="black" name='group' style={{ textAlignVertical: 'center' }} />
-                            <Text style={{ fontSize: 12, marginTop: 8 }}>{data.serves}</Text>
+                            <Text style={{ fontSize: 12, marginTop: 8, fontFamily: 'Poppins-Medium' }}>{data.serves}</Text>
                         </View>
                     </View>
                 </View>
@@ -252,3 +249,11 @@ const styles = StyleSheet.create({
         backgroundColor: 'white'
     }
 })
+
+const mapStateToProps = (state) => {
+    return {
+        token: state.token
+    }
+}
+
+export default connect(mapStateToProps)(DetailScreen)

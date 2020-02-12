@@ -2,6 +2,9 @@ import React from 'react';
 import * as appJson from '../../app.json';
 import { StyleSheet, StatusBar, ImageBackground, Image, Text } from 'react-native';
 import { StackActions, NavigationActions } from 'react-navigation';
+import AsyncStorage from '@react-native-community/async-storage';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 
 class SplashScreen extends React.Component {
     static navigationOptions = {
@@ -9,14 +12,31 @@ class SplashScreen extends React.Component {
     };
 
     componentWillMount() {
-        const navigateAction = StackActions.reset({
-            index: 0,
-            actions: [NavigationActions.navigate({ routeName: "Login" })],
-        });
+        this.getData()
+    }
 
-        setTimeout(() => {
-            this.props.navigation.dispatch(navigateAction);
-        }, 3000)
+    getData = async () => {
+        try {
+            let route = 'Login'
+            const value = await AsyncStorage.getItem('@store_token')
+            console.log("Value:- "+value)
+            if (value !== null) {
+                route = 'DashBoard'
+                this.props.updateT(value)
+            }
+
+            const navigateAction = StackActions.reset({
+                index: 0,
+                actions: [NavigationActions.navigate({ routeName: route })],
+            });
+
+            setTimeout(() => {
+                this.props.navigation.dispatch(navigateAction);
+            }, 3000)
+        } catch (e) {
+            // error reading value
+            console.log(e)
+        }
     }
 
     render() {
@@ -38,4 +58,23 @@ const styles = StyleSheet.create({
     },
 });
 
-export default SplashScreen
+const updateToken = (token) => {
+    return {
+        type: 'TOKEN_UPDATE',
+        payload: token
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return bindActionCreators({
+        updateT: (token) => updateToken(token)
+    }, dispatch)
+}
+
+const mapStateToProps = (state) => {
+    return {
+        token: state.token
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(SplashScreen)
