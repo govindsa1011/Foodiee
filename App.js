@@ -6,6 +6,7 @@ import LoginScreen from './src/screens/login';
 import RegisterScreen from './src/screens/signup';
 import DashBoardScreen from './src/screens/dashboard';
 import DetailScreen from './src/screens/detail';
+import MapComponent from './src/screens/map';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
@@ -15,7 +16,8 @@ const AppContainer = createAppContainer(
         Login: { screen: LoginScreen },
         Register: { screen: RegisterScreen },
         DashBoard: { screen: DashBoardScreen },
-        Detail: { screen: DetailScreen }
+        Detail: { screen: DetailScreen },
+        MapScreen:{screen:MapComponent}
     })
 )
 

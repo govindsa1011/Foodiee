@@ -124,7 +124,8 @@ class LoginScreen extends React.Component {
                         this.props.updateT(responseJson.token)
 
                         this.storeData(responseJson.token)
-
+                        this.storeUserDetails(responseJson)
+                        
                         const navigateAction = StackActions.reset({
                             index: 0,
                             actions: [NavigationActions.navigate({ routeName: "DashBoard" })],
@@ -148,6 +149,15 @@ class LoginScreen extends React.Component {
             console.log(e)
         }
     }
+
+    storeUserDetails = async (userDetail) => {
+        try{
+            await AsyncStorage.setItem('@store_user_detail', JSON.stringify(userDetail))
+        }catch(e){
+            // saving error
+            console.log(e)
+        }
+    } 
 
     txtEmailChangeHangler = (val) => {
         this.setState({

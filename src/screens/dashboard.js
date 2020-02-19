@@ -101,11 +101,11 @@ class DashBoardScreen extends React.Component {
                 break;
             }
             case 'search': {
-                screenVisible = <SearchScreen token={this.props.token}/>;
+                screenVisible = <SearchScreen token={this.props.token} navigation={this.props.navigation}/>;
                 break;
             }
             case 'profile': {
-                screenVisible = <ProfileScreen />;
+                screenVisible = <ProfileScreen navigation={this.props.navigation}/>;
                 break;
             }
 

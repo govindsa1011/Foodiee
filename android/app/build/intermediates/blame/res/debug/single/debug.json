@@ -1,11 +1,19 @@
 [
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/raw_amu_document_nest.kml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/37e08dd564f3e9801d44fa895f99b277/res/raw/amu_document_nest.kml"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-ldrtl-mdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable_abc_switch_thumb_material.xml.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_amu_bubble_mask.9.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/37e08dd564f3e9801d44fa895f99b277/res/drawable-xxhdpi-v4/amu_bubble_mask.9.png"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable_abc_dialog_material_background.xml.flat",
@@ -64,6 +72,10 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-hdpi-v4/abc_text_select_handle_middle_mtrl_dark.png"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable-xhdpi-v4/googleg_standard_color_18.png"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable_abc_btn_check_material.xml.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable/abc_btn_check_material.xml"
     },
@@ -88,6 +100,10 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_disabled.xml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable/common_google_signin_btn_icon_disabled.xml"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
     },
@@ -102,6 +118,14 @@
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable-xxhdpi-v4/googleg_standard_color_18.png"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
@@ -128,6 +152,10 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xxhdpi-v4/abc_text_select_handle_right_mtrl_dark.png"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/raw_amu_ground_overlay.kml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/37e08dd564f3e9801d44fa895f99b277/res/raw/amu_ground_overlay.kml"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/color_switch_thumb_material_light.xml.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/color/switch_thumb_material_light.xml"
     },
@@ -146,6 +174,10 @@
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-ldrtl-hdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/layout_amu_webview.xml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/37e08dd564f3e9801d44fa895f99b277/res/layout/amu_webview.xml"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_icon.xml.flat",
@@ -200,6 +232,10 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/d69dd2ee07006235902e5a2e7d936425/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable-mdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/layout_notification_action.xml.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/d69dd2ee07006235902e5a2e7d936425/res/layout/notification_action.xml"
     },
@@ -236,6 +272,10 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xxhdpi-v4/abc_ic_star_black_16dp.png"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xhdpi-v4/abc_ic_star_black_16dp.png"
     },
@@ -258,6 +298,10 @@
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/layout_abc_tooltip.xml.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/layout/abc_tooltip.xml"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/raw_amu_basic_folder.kml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/37e08dd564f3e9801d44fa895f99b277/res/raw/amu_basic_folder.kml"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/layout_abc_select_dialog_material.xml.flat",
@@ -312,6 +356,10 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_amu_bubble_shadow.9.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/37e08dd564f3e9801d44fa895f99b277/res/drawable-xhdpi-v4/amu_bubble_shadow.9.png"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_015.png"
     },
@@ -360,12 +408,12 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xhdpi-v4/abc_ic_star_half_black_16dp.png"
     },
     {
-        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/color_abc_tint_edittext.xml.flat",
-        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/color/abc_tint_edittext.xml"
-    },
-    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/color_abc_tint_edittext.xml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/color/abc_tint_edittext.xml"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/layout_abc_alert_dialog_title_material.xml.flat",
@@ -396,16 +444,24 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-mdpi-v4/abc_list_focused_holo.9.png"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/raw_amu_nested_folders.kml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/37e08dd564f3e9801d44fa895f99b277/res/raw/amu_nested_folders.kml"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_light_focused.xml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable/common_google_signin_btn_text_light_focused.xml"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png"
     },
     {
-        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
-        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-mdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/color_abc_primary_text_material_light.xml.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-mdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
@@ -416,8 +472,20 @@
         "source": "/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_light_normal.xml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable/common_google_signin_btn_text_light_normal.xml"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-mdpi-v4/abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_dark.xml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable/common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_light_focused.xml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable/common_google_signin_btn_icon_light_focused.xml"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
@@ -446,6 +514,10 @@
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xxhdpi-v4/abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable-mdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
@@ -480,6 +552,10 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-hdpi-v4/abc_list_longpressed_holo.9.png"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_googleg_disabled_color_18.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable-hdpi-v4/googleg_disabled_color_18.png"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
@@ -492,8 +568,16 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/d69dd2ee07006235902e5a2e7d936425/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/raw_amu_visibility_ground_overlay.kml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/37e08dd564f3e9801d44fa895f99b277/res/raw/amu_visibility_ground_overlay.kml"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/xml_rn_dev_preferences.xml.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/168acf2b1798da1d27dbf9cc98dec450/res/xml/rn_dev_preferences.xml"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/layout_amu_text_bubble.xml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/37e08dd564f3e9801d44fa895f99b277/res/layout/amu_text_bubble.xml"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/layout_abc_action_menu_layout.xml.flat",
@@ -544,6 +628,10 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xxxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/raw_amu_cdata.kml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/37e08dd564f3e9801d44fa895f99b277/res/raw/amu_cdata.kml"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/layout_abc_cascading_menu_item_layout.xml.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/layout/abc_cascading_menu_item_layout.xml"
     },
@@ -556,12 +644,12 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
     {
-        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
-        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
-    },
-    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable_abc_text_cursor_material.xml.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable/abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
@@ -584,8 +672,16 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable/abc_btn_colored_material.xml"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_light.xml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable/common_google_signin_btn_text_light.xml"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xxhdpi-v4/abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/raw_amu_unknwown_folder.kml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/37e08dd564f3e9801d44fa895f99b277/res/raw/amu_unknwown_folder.kml"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
@@ -636,12 +732,20 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-hdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/color_abc_tint_default.xml.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/color/abc_tint_default.xml"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-mdpi-v4/abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_light_normal.xml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable/common_google_signin_btn_icon_light_normal.xml"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
@@ -672,6 +776,10 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/layout/abc_action_menu_item_layout.xml"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/raw_amu_multiple_placemarks.kml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/37e08dd564f3e9801d44fa895f99b277/res/raw/amu_multiple_placemarks.kml"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xxxhdpi-v4/abc_ic_star_black_16dp.png"
     },
@@ -682,6 +790,10 @@
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xxxhdpi-v4/abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/layout_amu_info_window.xml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/37e08dd564f3e9801d44fa895f99b277/res/layout/amu_info_window.xml"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/layout_abc_screen_simple.xml.flat",
@@ -696,12 +808,20 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_16dp.png"
     },
     {
-        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/anim_abc_fade_out.xml.flat",
-        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/anim/abc_fade_out.xml"
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable-hdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/color_common_google_signin_btn_text_dark.xml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/color/common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xhdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/anim_abc_fade_out.xml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/anim/abc_fade_out.xml"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/color_abc_tint_seek_thumb.xml.flat",
@@ -728,6 +848,10 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/d69dd2ee07006235902e5a2e7d936425/res/drawable/notification_icon_background.xml"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/raw_amu_inline_style.kml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/37e08dd564f3e9801d44fa895f99b277/res/raw/amu_inline_style.kml"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xxhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
     },
@@ -736,8 +860,16 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xxhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/raw_amu_ground_overlay_color.kml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/37e08dd564f3e9801d44fa895f99b277/res/raw/amu_ground_overlay_color.kml"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-mdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -812,6 +944,14 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable-mdpi-v4/googleg_standard_color_18.png"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable-hdpi-v4/googleg_standard_color_18.png"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xxhdpi-v4/abc_text_select_handle_left_mtrl_dark.png"
     },
@@ -868,12 +1008,24 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-mdpi-v4/abc_ic_star_half_black_16dp.png"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_dark_normal.xml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable/common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/raw_amu_draw_order_ground_overlay.kml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/37e08dd564f3e9801d44fa895f99b277/res/raw/amu_draw_order_ground_overlay.kml"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xxhdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/raw_amu_ballon_gx_prefix.kml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/37e08dd564f3e9801d44fa895f99b277/res/raw/amu_ballon_gx_prefix.kml"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable_abc_btn_radio_material.xml.flat",
@@ -886,6 +1038,10 @@
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-mdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/raw_amu_extended_data.kml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/37e08dd564f3e9801d44fa895f99b277/res/raw/amu_extended_data.kml"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -906,6 +1062,10 @@
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/layout_notification_action_tombstone.xml.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/d69dd2ee07006235902e5a2e7d936425/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/raw_amu_poly_style_boolean_numeric.kml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/37e08dd564f3e9801d44fa895f99b277/res/raw/amu_poly_style_boolean_numeric.kml"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -932,6 +1092,10 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/anim/abc_tooltip_exit.xml"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_dark_focused.xml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable/common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
     },
@@ -940,12 +1104,24 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_48dp.png"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/layout_fps_view.xml.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/168acf2b1798da1d27dbf9cc98dec450/res/layout/fps_view.xml"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_amu_bubble_mask.9.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/37e08dd564f3e9801d44fa895f99b277/res/drawable-xhdpi-v4/amu_bubble_mask.9.png"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_dark_normal.xml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable/common_google_signin_btn_text_dark_normal.xml"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -988,8 +1164,20 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_dark.xml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable/common_google_signin_btn_text_dark.xml"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_disabled.xml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/raw_amu_multigeometry_placemarks.kml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/37e08dd564f3e9801d44fa895f99b277/res/raw/amu_multigeometry_placemarks.kml"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
@@ -1016,12 +1204,12 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
-        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
-        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
-    },
-    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_holo_dark.xml.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable/abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -1046,6 +1234,10 @@
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_full_open_on_phone.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable-xhdpi-v4/common_full_open_on_phone.png"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
@@ -1080,8 +1272,20 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_000.png"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_googleg_disabled_color_18.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable-mdpi-v4/googleg_disabled_color_18.png"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/raw_amu_basic_placemark.kml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/37e08dd564f3e9801d44fa895f99b277/res/raw/amu_basic_placemark.kml"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/color_abc_btn_colored_borderless_text_material.xml.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/color/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -1128,6 +1332,10 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/168acf2b1798da1d27dbf9cc98dec450/res/anim/catalyst_push_up_in.xml"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_full_open_on_phone.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable-hdpi-v4/common_full_open_on_phone.png"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
@@ -1144,12 +1352,20 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/168acf2b1798da1d27dbf9cc98dec450/res/layout/redbox_view.xml"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_amu_bubble_shadow.9.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/37e08dd564f3e9801d44fa895f99b277/res/drawable-xxhdpi-v4/amu_bubble_shadow.9.png"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-mdpi-v4/abc_list_pressed_holo_dark.9.png"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-v21_abc_action_bar_item_background_material.xml.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable-hdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/layout_abc_action_bar_title_item.xml.flat",
@@ -1182,6 +1398,10 @@
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
@@ -1224,6 +1444,10 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/color-v23/abc_tint_spinner.xml"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/raw_amu_poly_style_boolean_alpha.kml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/37e08dd564f3e9801d44fa895f99b277/res/raw/amu_poly_style_boolean_alpha.kml"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-mdpi-v4/abc_ic_star_black_36dp.png"
     },
@@ -1260,12 +1484,20 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/d69dd2ee07006235902e5a2e7d936425/res/layout-v21/notification_template_icon_group.xml"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_googleg_disabled_color_18.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable-xhdpi-v4/googleg_disabled_color_18.png"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/layout_abc_alert_dialog_material.xml.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/layout/abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -1292,12 +1524,20 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/d69dd2ee07006235902e5a2e7d936425/res/layout/notification_template_part_chronometer.xml"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xhdpi-v4/abc_popup_background_mtrl_mult.9.png"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/layout-watch-v20_abc_alert_dialog_button_bar_material.xml.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
-        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xhdpi-v4/abc_popup_background_mtrl_mult.9.png"
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_light.xml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable/common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -1332,6 +1572,14 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xxxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/color_common_google_signin_btn_text_light.xml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_googleg_disabled_color_18.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable-xxhdpi-v4/googleg_disabled_color_18.png"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-hdpi-v4/abc_ic_star_half_black_16dp.png"
     },
@@ -1344,8 +1592,16 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-hdpi-v4/abc_ic_star_half_black_36dp.png"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/raw_amu_unsupported.kml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/37e08dd564f3e9801d44fa895f99b277/res/raw/amu_unsupported.kml"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable_abc_cab_background_internal_bg.xml.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable/abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_dark_focused.xml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
@@ -1448,12 +1704,12 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_015.png"
     },
     {
-        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable_abc_seekbar_track_material.xml.flat",
-        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable/abc_seekbar_track_material.xml"
-    },
-    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-mdpi-v4/abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable_abc_seekbar_track_material.xml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable/abc_seekbar_track_material.xml"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
@@ -1470,6 +1726,10 @@
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/color_common_google_signin_btn_tint.xml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/color/common_google_signin_btn_tint.xml"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -1508,20 +1768,32 @@
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable/tooltip_frame_light.xml"
     },
     {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/raw_amu_default_balloon.kml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/37e08dd564f3e9801d44fa895f99b277/res/raw/amu_default_balloon.kml"
+    },
+    {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable_abc_seekbar_thumb_material.xml.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable/abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-xxhdpi-v4/abc_list_longpressed_holo.9.png"
     },
     {
-        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_longpressed_holo.9.png.flat",
-        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-mdpi-v4/abc_list_longpressed_holo.9.png"
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
         "source": "/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_longpressed_holo.9.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/drawable-mdpi-v4/abc_list_longpressed_holo.9.png"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -1538,6 +1810,10 @@
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_layout.xml.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/raw_amu_nested_multigeometry.kml.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/37e08dd564f3e9801d44fa895f99b277/res/raw/amu_nested_multigeometry.kml"
     },
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable_notification_bg.xml.flat",
@@ -1622,5 +1898,9 @@
     {
         "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/color-v23_abc_tint_switch_track.xml.flat",
         "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/47c362e4103d71bfb0cc372d6767952b/res/color-v23/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "/home/govindprajapati/.gradle/caches/transforms-2/files-2.1/abb522337c7c86e88d5c7348c64ae522/res/drawable-mdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
     }
 ]

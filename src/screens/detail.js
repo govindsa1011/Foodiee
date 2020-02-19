@@ -129,7 +129,7 @@ class DetailScreen extends React.Component {
                     barStyle="light-content"
                     translucent={true}
                 />
-                <ImageBackground style={{ width: '100%', height: 300 }}
+                <ImageBackground style={{ width: '100%', height: 300, flexDirection: 'row' }}
                     onLoad={() => {
                         this.setState({
                             isImgLoading: false
@@ -140,6 +140,14 @@ class DetailScreen extends React.Component {
                     <TouchableOpacity style={styles.circleShadow} onPress={() => this.props.navigation.pop()}>
                         <Icon size={16} color="white" name='chevron-left' />
                     </TouchableOpacity>
+
+                    <View style={{flex:1,alignItems:'flex-end',marginEnd:16}}>
+                        <TouchableOpacity style={[styles.circleShadow,{paddingEnd:0}]} onPress={() => {
+                            this.props.navigation.navigate("MapScreen")
+                         }}>
+                            <Icon size={18} color="white" name='map-marker' />
+                        </TouchableOpacity>
+                    </View>
 
                     {this.state.isImgLoading ? <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
                         <ActivityIndicator size="small" color="#000000" />

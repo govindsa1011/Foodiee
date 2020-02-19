@@ -18,6 +18,7 @@
     "react-native-chips": "^2.2.0",
     "react-native-gesture-handler": "^1.5.2",
     "react-native-image-picker": "^2.2.1",
+    "react-native-maps": "0.26.1",
     "react-native-material-bottom-navigation": "^1.0.5",
     "react-native-material-dropdown": "^0.11.1",
     "react-native-shaking-text": "^0.1.0",
@@ -42,6 +43,8 @@
     "preset": "react-native"
   },
   "rnpm": {
-    "assets": ["./assets/fonts"]
+    "assets": [
+      "./assets/fonts"
+    ]
   }
 }

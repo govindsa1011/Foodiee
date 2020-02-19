@@ -40,6 +40,10 @@ target 'Foodiee' do
 
   pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
 
+  pod 'react-native-maps', :path => '../node_modules/react-native-maps'
+
+  pod 'react-native-shimmer', :path => '../node_modules/react-native-shimmer'
+
   target 'FoodieeTests' do
     inherit! :search_paths
     # Pods for testing
