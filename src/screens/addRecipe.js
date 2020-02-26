@@ -167,7 +167,7 @@ export default class AddNewRecipe extends React.Component {
                 imgUri: undefined
             })
             this.props.onSuccess()
-            
+
             if (responseJson != null) {
                 console.log("Success")
             } else {
