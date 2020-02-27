@@ -1,4 +1,4 @@
-#Wed Feb 19 18:04:05 IST 2020
-base.0=/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/transforms/dexMerger/debug/0
-renamed.0=classes.dex
+#Thu Feb 27 17:38:39 IST 2020
+base.0=/home/govindprajapati/Public/React Native/Foodiee/android/app/build/intermediates/dex/debug/out/classes.dex
 path.0=classes.dex
+renamed.0=classes.dex

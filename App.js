@@ -10,6 +10,8 @@ import MapComponent from './src/screens/map';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
+console.disableYellowBox = true;
+
 const AppContainer = createAppContainer(
     createStackNavigator({
         Splash: { screen: SplashScreen },
