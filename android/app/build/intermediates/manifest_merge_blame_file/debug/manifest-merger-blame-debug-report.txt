@@ -1,0 +1,135 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.foodiee"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="28" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:5:5-77
+11-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:4:5-67
+12-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:4:22-64
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:6:5-65
+13-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:6:22-62
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:7:5-80
+14-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:7:22-78
+15    <uses-permission android:name="android.permission.ACCESS_COURSE_LOCATION" />
+15-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:8:5-80
+15-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:8:22-78
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:9:5-79
+16-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:9:22-76
+17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Include required permissions for Google Maps API to run. -->
+17-->[:react-native-maps] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-81
+17-->[:react-native-maps] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:22-78
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->[com.google.android.gms:play-services-maps:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b7dbe56c71daeb9e3f57b02ef19d3c69/jetified-play-services-maps-17.0.0/AndroidManifest.xml:23:5-79
+18-->[com.google.android.gms:play-services-maps:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b7dbe56c71daeb9e3f57b02ef19d3c69/jetified-play-services-maps-17.0.0/AndroidManifest.xml:23:22-76
+19
+20    <uses-feature
+20-->[com.google.android.gms:play-services-maps:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b7dbe56c71daeb9e3f57b02ef19d3c69/jetified-play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+21        android:glEsVersion="0x00020000"
+21-->[com.google.android.gms:play-services-maps:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b7dbe56c71daeb9e3f57b02ef19d3c69/jetified-play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+22        android:required="true" />
+22-->[com.google.android.gms:play-services-maps:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b7dbe56c71daeb9e3f57b02ef19d3c69/jetified-play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+23
+24    <application
+24-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:11:5-36:19
+25        android:name="com.foodiee.MainApplication"
+25-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:12:9-40
+26        android:allowBackup="false"
+26-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:13:9-36
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.0.1] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/36e3e9561b56dfae3649040dc909bb65/core-1.0.1/AndroidManifest.xml:22:18-86
+28        android:debuggable="true"
+29        android:icon="@mipmap/ic_launcher"
+29-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:14:9-43
+30        android:label="@string/app_name"
+30-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:15:9-41
+31        android:roundIcon="@mipmap/ic_launcher_round"
+31-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:16:9-54
+32        android:theme="@style/AppTheme"
+32-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:17:9-40
+33        android:usesCleartextTraffic="true" >
+33-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:18:9-44
+34        <activity
+34-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:20:9-29:20
+35            android:name="com.foodiee.MainActivity"
+35-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:21:13-41
+36            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+36-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:22:13-83
+37            android:label="@string/app_name"
+37-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:23:13-45
+38            android:windowSoftInputMode="adjustResize" >
+38-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:24:13-55
+39            <intent-filter>
+39-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:25:13-28:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:26:17-69
+40-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:26:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:27:17-77
+42-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:27:27-74
+43            </intent-filter>
+44        </activity>
+45        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+45-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:30:9-86
+45-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:30:19-83
+46
+47        <meta-data
+47-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:32:9-34:68
+48            android:name="com.google.android.geo.API_KEY"
+48-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:33:11-56
+49            android:value="AIzaSyAE2uNPzhJXNZATogQB6Et_c2GWNXlh9Ts" /> <!-- Needs to be explicitly declared on P+ -->
+49-->/home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:34:11-66
+50        <uses-library
+50-->[com.google.android.gms:play-services-maps:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b7dbe56c71daeb9e3f57b02ef19d3c69/jetified-play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+51            android:name="org.apache.http.legacy"
+51-->[com.google.android.gms:play-services-maps:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b7dbe56c71daeb9e3f57b02ef19d3c69/jetified-play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+52            android:required="false" />
+52-->[com.google.android.gms:play-services-maps:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b7dbe56c71daeb9e3f57b02ef19d3c69/jetified-play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+53
+54        <activity
+54-->[com.google.android.gms:play-services-base:17.1.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/8db6f3075ab87434062c1fb93320e1aa/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+55            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+55-->[com.google.android.gms:play-services-base:17.1.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/8db6f3075ab87434062c1fb93320e1aa/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+56            android:exported="false"
+56-->[com.google.android.gms:play-services-base:17.1.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/8db6f3075ab87434062c1fb93320e1aa/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+57            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+57-->[com.google.android.gms:play-services-base:17.1.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/8db6f3075ab87434062c1fb93320e1aa/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+58
+59        <provider
+59-->[:react-native-image-picker] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-18:20
+60            android:name="com.imagepicker.FileProvider"
+60-->[:react-native-image-picker] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-56
+61            android:authorities="com.foodiee.provider"
+61-->[:react-native-image-picker] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-60
+62            android:exported="false"
+62-->[:react-native-image-picker] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-37
+63            android:grantUriPermissions="true" >
+63-->[:react-native-image-picker] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-47
+64            <meta-data
+64-->[:react-native-image-picker] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-17:58
+65                android:name="android.support.FILE_PROVIDER_PATHS"
+65-->[:react-native-image-picker] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:17-67
+66                android:resource="@xml/provider_paths" />
+66-->[:react-native-image-picker] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-55
+67        </provider>
+68
+69        <meta-data
+69-->[com.google.maps.android:android-maps-utils:0.5] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/8b3731e0fa3fbd3aca8dfdf4f21ac157/jetified-android-maps-utils-0.5/AndroidManifest.xml:8:9-10:69
+70            android:name="com.google.android.gms.version"
+70-->[com.google.maps.android:android-maps-utils:0.5] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/8b3731e0fa3fbd3aca8dfdf4f21ac157/jetified-android-maps-utils-0.5/AndroidManifest.xml:9:13-58
+71            android:value="@integer/google_play_services_version" />
+71-->[com.google.maps.android:android-maps-utils:0.5] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/8b3731e0fa3fbd3aca8dfdf4f21ac157/jetified-android-maps-utils-0.5/AndroidManifest.xml:10:13-66
+72    </application>
+73
+74</manifest>

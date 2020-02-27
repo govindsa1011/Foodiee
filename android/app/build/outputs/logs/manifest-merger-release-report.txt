@@ -1,0 +1,335 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:1:1-38:12
+INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:1:1-38:12
+INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:1:1-38:12
+INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:1:1-38:12
+MERGED from [:react-native-maps] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-12:12
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b7dbe56c71daeb9e3f57b02ef19d3c69/jetified-play-services-maps-17.0.0/AndroidManifest.xml:17:1-38:12
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/8db6f3075ab87434062c1fb93320e1aa/jetified-play-services-base-17.1.0/AndroidManifest.xml:17:1-29:12
+MERGED from [:@react-native-community_async-storage] /home/govindprajapati/Public/React Native/Foodiee/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-image-picker] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-21:12
+MERGED from [:react-native-vector-icons] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-gesture-handler] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.61.5] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/97e73e4583f1aae184aa757f00e72aa8/jetified-react-native-0.61.5/AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.fresco:animated-gif:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/0f7e2cae43164d6ff5adcd71444c15ee/jetified-animated-gif-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [org.webkit:android-jsc:r245459] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/e7bcd94add2fef72d7459fd743d41773/jetified-android-jsc-r245459/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/35d90229a6721557d1c3c07573a6cb55/appcompat-1.0.2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/8b3731e0fa3fbd3aca8dfdf4f21ac157/jetified-android-maps-utils-0.5/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b8ce0a3bccc127c1708e05b85b981548/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/2fabb30335504ebb11c3fa77eec525c6/jetified-play-services-basement-17.0.0/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/9618e4771644af83034a677d1455ee67/fragment-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/2bf4411d7b49fe738961a567d576f4d2/vectordrawable-animated-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/5ca262859c3133a4aa973ae959ce2061/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/4b7ccbf1545389655242b31b69a0c2ef/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/caea093eaa3f4ab10bb21ae1108e4fce/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/a6d7a6d9fa233c347f5a967199f8ffbd/vectordrawable-1.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/5772398f154fbb421660eae656082fcd/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/25a86418cd5f5fb0e0fa98b4559da7df/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/1e19b627048259720a9293cff54eca4b/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/041bb1c3a0dbc07996e40bbb615a03fc/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/457b24bb365487f19b919b9304bfe494/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/6aba77ce87b62d8347ca6f06e6145185/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/a7f62cef6f2580716be1fbc0bf2d19f1/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.1] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/36e3e9561b56dfae3649040dc909bb65/core-1.0.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/058e31eaf44c56365f3b30c5b91c8134/versionedparcelable-1.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.facebook.fresco:fresco:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/f86e20bc33f563e2ee8df8619c3bc156/jetified-fresco-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/6d5dbf14ab6c216d892d2b73d24b4e80/jetified-imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:animated-base:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/eeac9c2fddee979c5d1c673e52c5bbbd/jetified-animated-base-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:animated-drawable:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/7e758b603f01ce2c8b57e29eb91fad75/jetified-animated-drawable-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/6292e4903e949404867a70ed478bac55/jetified-drawee-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/5eda47f93fe26ca61d63ca1b539533f6/jetified-nativeimagefilters-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/8d0438c8dffe395799a420e5734b9f88/jetified-imagepipeline-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/f09359b6883d27e42534d64dad0a5086/jetified-nativeimagetranscoder-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/fecf8bf9a9704431878afe2e6338bb76/jetified-imagepipeline-base-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/728292f7d63c2a78aea4f018f7f39016/jetified-soloader-0.6.0/AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/c66c04f543060b8e8a5860e6f3221ee3/jetified-fbcore-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/31884234bbfc18c9669057802122ca0d/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/844e6d8d110901814b6cf2c0e58db777/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/1653319b2d58e30ed9313b0c2df5947e/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/a89fd51e9582eccdee29149516da0a3b/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/65ffefdcdf6ac37c61296df8feb5c9c7/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/217472ccd08ea4a85c967983d0668f8b/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/ce24e7fa4f5089420697906de566d165/lifecycle-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/13f6a8a8ac08da7eb6eca2e6990d51f4/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/be7a7dfb68705840901dbd39fdfd186a/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/43a209a1574b998fc4c3256029348641/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:1:1-38:12
+INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:1:1-38:12
+INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:1:1-38:12
+	package
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:2:5-26
+		INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:1:1-38:12
+		INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:1:1-38:12
+		INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [:react-native-maps] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/release/AndroidManifest.xml:9:5-67
+MERGED from [:react-native-maps] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/release/AndroidManifest.xml:9:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b7dbe56c71daeb9e3f57b02ef19d3c69/jetified-play-services-maps-17.0.0/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b7dbe56c71daeb9e3f57b02ef19d3c69/jetified-play-services-maps-17.0.0/AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:5:5-77
+	android:name
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:5:22-75
+uses-permission#android.permission.CAMERA
+ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:6:5-65
+	android:name
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:6:22-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:7:22-78
+uses-permission#android.permission.ACCESS_COURSE_LOCATION
+ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:8:5-80
+	android:name
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:8:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:9:22-76
+application
+ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:11:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b7dbe56c71daeb9e3f57b02ef19d3c69/jetified-play-services-maps-17.0.0/AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b7dbe56c71daeb9e3f57b02ef19d3c69/jetified-play-services-maps-17.0.0/AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/8db6f3075ab87434062c1fb93320e1aa/jetified-play-services-base-17.1.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/8db6f3075ab87434062c1fb93320e1aa/jetified-play-services-base-17.1.0/AndroidManifest.xml:22:5-27:19
+MERGED from [:react-native-image-picker] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:9:5-19:19
+MERGED from [:react-native-image-picker] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:9:5-19:19
+MERGED from [com.facebook.react:react-native:0.61.5] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/97e73e4583f1aae184aa757f00e72aa8/jetified-react-native-0.61.5/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.61.5] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/97e73e4583f1aae184aa757f00e72aa8/jetified-react-native-0.61.5/AndroidManifest.xml:11:5-20
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/8b3731e0fa3fbd3aca8dfdf4f21ac157/jetified-android-maps-utils-0.5/AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/8b3731e0fa3fbd3aca8dfdf4f21ac157/jetified-android-maps-utils-0.5/AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b8ce0a3bccc127c1708e05b85b981548/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b8ce0a3bccc127c1708e05b85b981548/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/2fabb30335504ebb11c3fa77eec525c6/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/2fabb30335504ebb11c3fa77eec525c6/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.0.1] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/36e3e9561b56dfae3649040dc909bb65/core-1.0.1/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.1] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/36e3e9561b56dfae3649040dc909bb65/core-1.0.1/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/058e31eaf44c56365f3b30c5b91c8134/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/058e31eaf44c56365f3b30c5b91c8134/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/728292f7d63c2a78aea4f018f7f39016/jetified-soloader-0.6.0/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/728292f7d63c2a78aea4f018f7f39016/jetified-soloader-0.6.0/AndroidManifest.xml:11:5-20
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.1] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/36e3e9561b56dfae3649040dc909bb65/core-1.0.1/AndroidManifest.xml:22:18-86
+	android:label
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:15:9-41
+	android:roundIcon
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:16:9-54
+	android:icon
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:14:9-43
+	android:allowBackup
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:13:9-36
+	android:theme
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:17:9-40
+	android:usesCleartextTraffic
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:18:9-44
+	android:name
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:12:9-40
+activity#com.foodiee.MainActivity
+ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:20:9-29:20
+	android:label
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:23:13-45
+	android:windowSoftInputMode
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:24:13-55
+	android:configChanges
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:22:13-83
+	android:name
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:21:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:25:13-28:29
+action#android.intent.action.MAIN
+ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:26:17-69
+	android:name
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:26:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:27:17-77
+	android:name
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:27:27-74
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:30:9-86
+	android:name
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:30:19-83
+meta-data#com.google.android.geo.API_KEY
+ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:32:9-34:68
+	android:value
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:34:11-66
+	android:name
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml:33:11-56
+uses-sdk
+INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-maps] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-maps] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b7dbe56c71daeb9e3f57b02ef19d3c69/jetified-play-services-maps-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b7dbe56c71daeb9e3f57b02ef19d3c69/jetified-play-services-maps-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/8db6f3075ab87434062c1fb93320e1aa/jetified-play-services-base-17.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/8db6f3075ab87434062c1fb93320e1aa/jetified-play-services-base-17.1.0/AndroidManifest.xml:20:5-44
+MERGED from [:@react-native-community_async-storage] /home/govindprajapati/Public/React Native/Foodiee/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-community_async-storage] /home/govindprajapati/Public/React Native/Foodiee/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-image-picker] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-image-picker] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.5] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/97e73e4583f1aae184aa757f00e72aa8/jetified-react-native-0.61.5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.5] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/97e73e4583f1aae184aa757f00e72aa8/jetified-react-native-0.61.5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:animated-gif:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/0f7e2cae43164d6ff5adcd71444c15ee/jetified-animated-gif-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:animated-gif:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/0f7e2cae43164d6ff5adcd71444c15ee/jetified-animated-gif-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [org.webkit:android-jsc:r245459] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/e7bcd94add2fef72d7459fd743d41773/jetified-android-jsc-r245459/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/e7bcd94add2fef72d7459fd743d41773/jetified-android-jsc-r245459/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat:1.0.2] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/35d90229a6721557d1c3c07573a6cb55/appcompat-1.0.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/35d90229a6721557d1c3c07573a6cb55/appcompat-1.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/8b3731e0fa3fbd3aca8dfdf4f21ac157/jetified-android-maps-utils-0.5/AndroidManifest.xml:5:5-43
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/8b3731e0fa3fbd3aca8dfdf4f21ac157/jetified-android-maps-utils-0.5/AndroidManifest.xml:5:5-43
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b8ce0a3bccc127c1708e05b85b981548/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b8ce0a3bccc127c1708e05b85b981548/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/2fabb30335504ebb11c3fa77eec525c6/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/2fabb30335504ebb11c3fa77eec525c6/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/9618e4771644af83034a677d1455ee67/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/9618e4771644af83034a677d1455ee67/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/2bf4411d7b49fe738961a567d576f4d2/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/2bf4411d7b49fe738961a567d576f4d2/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/5ca262859c3133a4aa973ae959ce2061/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/5ca262859c3133a4aa973ae959ce2061/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/4b7ccbf1545389655242b31b69a0c2ef/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/4b7ccbf1545389655242b31b69a0c2ef/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/caea093eaa3f4ab10bb21ae1108e4fce/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/caea093eaa3f4ab10bb21ae1108e4fce/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/a6d7a6d9fa233c347f5a967199f8ffbd/vectordrawable-1.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/a6d7a6d9fa233c347f5a967199f8ffbd/vectordrawable-1.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/5772398f154fbb421660eae656082fcd/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/5772398f154fbb421660eae656082fcd/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/25a86418cd5f5fb0e0fa98b4559da7df/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/25a86418cd5f5fb0e0fa98b4559da7df/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/1e19b627048259720a9293cff54eca4b/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/1e19b627048259720a9293cff54eca4b/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/041bb1c3a0dbc07996e40bbb615a03fc/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/041bb1c3a0dbc07996e40bbb615a03fc/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/457b24bb365487f19b919b9304bfe494/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/457b24bb365487f19b919b9304bfe494/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/6aba77ce87b62d8347ca6f06e6145185/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/6aba77ce87b62d8347ca6f06e6145185/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/a7f62cef6f2580716be1fbc0bf2d19f1/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/a7f62cef6f2580716be1fbc0bf2d19f1/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/36e3e9561b56dfae3649040dc909bb65/core-1.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/36e3e9561b56dfae3649040dc909bb65/core-1.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/058e31eaf44c56365f3b30c5b91c8134/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/058e31eaf44c56365f3b30c5b91c8134/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/f86e20bc33f563e2ee8df8619c3bc156/jetified-fresco-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/f86e20bc33f563e2ee8df8619c3bc156/jetified-fresco-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/6d5dbf14ab6c216d892d2b73d24b4e80/jetified-imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/6d5dbf14ab6c216d892d2b73d24b4e80/jetified-imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:animated-base:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/eeac9c2fddee979c5d1c673e52c5bbbd/jetified-animated-base-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:animated-base:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/eeac9c2fddee979c5d1c673e52c5bbbd/jetified-animated-base-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:animated-drawable:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/7e758b603f01ce2c8b57e29eb91fad75/jetified-animated-drawable-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:animated-drawable:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/7e758b603f01ce2c8b57e29eb91fad75/jetified-animated-drawable-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/6292e4903e949404867a70ed478bac55/jetified-drawee-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/6292e4903e949404867a70ed478bac55/jetified-drawee-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/5eda47f93fe26ca61d63ca1b539533f6/jetified-nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/5eda47f93fe26ca61d63ca1b539533f6/jetified-nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/8d0438c8dffe395799a420e5734b9f88/jetified-imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/8d0438c8dffe395799a420e5734b9f88/jetified-imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/f09359b6883d27e42534d64dad0a5086/jetified-nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/f09359b6883d27e42534d64dad0a5086/jetified-nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/fecf8bf9a9704431878afe2e6338bb76/jetified-imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/fecf8bf9a9704431878afe2e6338bb76/jetified-imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/728292f7d63c2a78aea4f018f7f39016/jetified-soloader-0.6.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/728292f7d63c2a78aea4f018f7f39016/jetified-soloader-0.6.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/c66c04f543060b8e8a5860e6f3221ee3/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/c66c04f543060b8e8a5860e6f3221ee3/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/31884234bbfc18c9669057802122ca0d/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/31884234bbfc18c9669057802122ca0d/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/844e6d8d110901814b6cf2c0e58db777/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/844e6d8d110901814b6cf2c0e58db777/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/1653319b2d58e30ed9313b0c2df5947e/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/1653319b2d58e30ed9313b0c2df5947e/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/a89fd51e9582eccdee29149516da0a3b/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/a89fd51e9582eccdee29149516da0a3b/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/65ffefdcdf6ac37c61296df8feb5c9c7/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/65ffefdcdf6ac37c61296df8feb5c9c7/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/217472ccd08ea4a85c967983d0668f8b/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/217472ccd08ea4a85c967983d0668f8b/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/ce24e7fa4f5089420697906de566d165/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/ce24e7fa4f5089420697906de566d165/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/13f6a8a8ac08da7eb6eca2e6990d51f4/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/13f6a8a8ac08da7eb6eca2e6990d51f4/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/be7a7dfb68705840901dbd39fdfd186a/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/be7a7dfb68705840901dbd39fdfd186a/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/43a209a1574b998fc4c3256029348641/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/43a209a1574b998fc4c3256029348641/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/govindprajapati/Public/React Native/Foodiee/android/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [:react-native-maps] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/release/AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from [:react-native-maps] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/release/AndroidManifest.xml:10:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b7dbe56c71daeb9e3f57b02ef19d3c69/jetified-play-services-maps-17.0.0/AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b7dbe56c71daeb9e3f57b02ef19d3c69/jetified-play-services-maps-17.0.0/AndroidManifest.xml:23:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b7dbe56c71daeb9e3f57b02ef19d3c69/jetified-play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b7dbe56c71daeb9e3f57b02ef19d3c69/jetified-play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b7dbe56c71daeb9e3f57b02ef19d3c69/jetified-play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b7dbe56c71daeb9e3f57b02ef19d3c69/jetified-play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b7dbe56c71daeb9e3f57b02ef19d3c69/jetified-play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/b7dbe56c71daeb9e3f57b02ef19d3c69/jetified-play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.1.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/8db6f3075ab87434062c1fb93320e1aa/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/8db6f3075ab87434062c1fb93320e1aa/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/8db6f3075ab87434062c1fb93320e1aa/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/8db6f3075ab87434062c1fb93320e1aa/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+provider#com.imagepicker.FileProvider
+ADDED from [:react-native-image-picker] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:10:9-18:20
+	android:grantUriPermissions
+		ADDED from [:react-native-image-picker] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:14:13-47
+	android:authorities
+		ADDED from [:react-native-image-picker] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:13-60
+	android:exported
+		ADDED from [:react-native-image-picker] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:13:13-37
+	android:name
+		ADDED from [:react-native-image-picker] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:13-56
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:react-native-image-picker] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:15:13-17:58
+	android:resource
+		ADDED from [:react-native-image-picker] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:17:17-55
+	android:name
+		ADDED from [:react-native-image-picker] /home/govindprajapati/Public/React Native/Foodiee/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:16:17-67
+meta-data#com.google.android.gms.version
+ADDED from [com.google.maps.android:android-maps-utils:0.5] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/8b3731e0fa3fbd3aca8dfdf4f21ac157/jetified-android-maps-utils-0.5/AndroidManifest.xml:8:9-10:69
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/2fabb30335504ebb11c3fa77eec525c6/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/2fabb30335504ebb11c3fa77eec525c6/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.maps.android:android-maps-utils:0.5] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/8b3731e0fa3fbd3aca8dfdf4f21ac157/jetified-android-maps-utils-0.5/AndroidManifest.xml:10:13-66
+	android:name
+		ADDED from [com.google.maps.android:android-maps-utils:0.5] /home/govindprajapati/.gradle/caches/transforms-2/files-2.1/8b3731e0fa3fbd3aca8dfdf4f21ac157/jetified-android-maps-utils-0.5/AndroidManifest.xml:9:13-58
